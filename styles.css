@@ -68,6 +68,18 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scroll behavior */
+* {
+    scroll-behavior: smooth;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, .btn, .project-card, .skill-badge, .experience-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ====================================
@@ -423,19 +435,23 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 600px;
+    width: 100%;
 }
 
 .floating-card {
     position: absolute;
-    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(51, 65, 85, 0.6));
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(51, 65, 85, 0.7));
     backdrop-filter: blur(10px);
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
     border-radius: 1rem;
     box-shadow: 0 10px 40px var(--shadow-color);
     border: 1px solid rgba(37, 99, 235, 0.3);
     text-align: center;
     animation: float 3s ease-in-out infinite;
-    transition: var(--transition-normal);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0.95;
+    min-width: 180px;
 }
 
 .floating-card:hover {
@@ -445,39 +461,47 @@ a {
 }
 
 .card-1 {
-    top: 5%;
-    left: 5%;
+    top: 0%;
+    left: 0%;
     animation-delay: 0s;
+    animation-duration: 4s;
 }
 
 .card-2 {
-    top: 10%;
-    right: 10%;
-    animation-delay: 0.5s;
+    top: 0%;
+    right: 5%;
+    animation-delay: 0.8s;
+    animation-duration: 5s;
 }
 
 .card-3 {
-    top: 45%;
-    left: 0%;
-    animation-delay: 1s;
+    top: 50%;
+    left: -5%;
+    transform: translateY(-50%);
+    animation-delay: 1.6s;
+    animation-duration: 4.5s;
 }
 
 .card-4 {
-    top: 45%;
-    right: 0%;
-    animation-delay: 1.5s;
+    top: 50%;
+    right: -5%;
+    transform: translateY(-50%);
+    animation-delay: 2.4s;
+    animation-duration: 5.5s;
 }
 
 .card-5 {
-    bottom: 15%;
-    left: 8%;
-    animation-delay: 2s;
+    bottom: 0%;
+    left: 5%;
+    animation-delay: 3.2s;
+    animation-duration: 4s;
 }
 
 .card-6 {
-    bottom: 10%;
-    right: 15%;
-    animation-delay: 2.5s;
+    bottom: 0%;
+    right: 0%;
+    animation-delay: 4s;
+    animation-duration: 6s;
 }
 
 .floating-card i {
@@ -1539,7 +1563,28 @@ a {
     }
     
     .hero-image {
-        display: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        position: relative;
+        min-height: auto;
+        margin-top: 3rem;
+    }
+    
+    .floating-card {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+        opacity: 1 !important;
+        min-width: auto;
+        animation: none;
+    }
+    
+    .floating-card:hover {
+        transform: scale(1.05) !important;
     }
     
     .hero-buttons {
