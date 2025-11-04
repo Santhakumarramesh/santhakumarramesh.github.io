@@ -269,43 +269,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ====================================
-// Dynamic Stats Counter (Optional)
+// Dynamic Stats Counter (Disabled to preserve % and K+)
 // ====================================
 
-function animateCounter(element, target, duration = 2000) {
+// Stats are set in HTML and don't animate
+// This prevents the counter from changing "87%" to "87+" and "200K+" to "200+"
+
+// If you want to enable animation later, you can uncomment below
+// and modify to preserve the suffix (%, K+, etc.)
+
+/*
+function animateCounter(element, target, suffix = '+') {
     let start = 0;
     const increment = target / (duration / 16);
     
     function updateCounter() {
         start += increment;
         if (start < target) {
-            element.textContent = Math.ceil(start) + '+';
+            element.textContent = Math.ceil(start) + suffix;
             requestAnimationFrame(updateCounter);
         } else {
-            element.textContent = target + '+';
+            element.textContent = target + suffix;
         }
     }
     
     updateCounter();
 }
-
-// Observe stats and animate when visible
-const statsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const statValue = entry.target.querySelector('h3');
-            if (statValue && !statValue.classList.contains('animated')) {
-                const target = parseInt(statValue.textContent);
-                animateCounter(statValue, target);
-                statValue.classList.add('animated');
-            }
-        }
-    });
-}, { threshold: 0.5 });
-
-document.querySelectorAll('.stat-item').forEach(stat => {
-    statsObserver.observe(stat);
-});
+*/
 
 // ====================================
 // Particles Background Effect (Optional)
