@@ -444,23 +444,40 @@ a {
     box-shadow: 0 20px 60px rgba(37, 99, 235, 0.4);
 }
 
-.floating-card:nth-child(1) {
-    top: 0;
-    left: 0;
+.card-1 {
+    top: 5%;
+    left: 5%;
     animation-delay: 0s;
 }
 
-.floating-card:nth-child(2) {
-    top: 50%;
-    right: 0;
+.card-2 {
+    top: 10%;
+    right: 10%;
+    animation-delay: 0.5s;
+}
+
+.card-3 {
+    top: 45%;
+    left: 0%;
     animation-delay: 1s;
 }
 
-.floating-card:nth-child(3) {
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+.card-4 {
+    top: 45%;
+    right: 0%;
+    animation-delay: 1.5s;
+}
+
+.card-5 {
+    bottom: 15%;
+    left: 8%;
     animation-delay: 2s;
+}
+
+.card-6 {
+    bottom: 10%;
+    right: 15%;
+    animation-delay: 2.5s;
 }
 
 .floating-card i {
