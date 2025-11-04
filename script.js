@@ -146,48 +146,57 @@ window.addEventListener('load', animateSkillBars);
 // ====================================
 
 const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('form-status');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Get form data
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        subject: document.getElementById('subject').value,
-        message: document.getElementById('message').value
-    };
-
-    // Here you would typically send the data to a backend service
-    // For now, we'll just show an alert
-    console.log('Form submitted:', formData);
-
-    // Show success message
-    alert(`Thank you for your message, ${formData.name}! I'll get back to you soon.`);
-
-    // Reset form
-    contactForm.reset();
-
-    // In production, you would use something like:
-    /*
-    fetch('YOUR_BACKEND_ENDPOINT', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-        alert('Message sent successfully!');
+contactForm.addEventListener('submit', async (e) => {
+    // Check if Formspree is configured
+    const action = contactForm.getAttribute('action');
+    
+    if (action.includes('YOUR_FORM_ID')) {
+        // Formspree not configured yet - show helpful message
+        e.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        
+        // Create mailto link as fallback
+        const mailtoLink = `mailto:santhar1500@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+        
+        // Show message with options
+        const userChoice = confirm(
+            `Contact form is not yet configured.\n\n` +
+            `Would you like to open your email client to send the message?\n\n` +
+            `Click OK to open email, or Cancel to copy the message to clipboard.`
+        );
+        
+        if (userChoice) {
+            // Open email client
+            window.location.href = mailtoLink;
+        } else {
+            // Copy to clipboard
+            const fullMessage = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`;
+            navigator.clipboard.writeText(fullMessage).then(() => {
+                alert('Message copied to clipboard! You can paste it in an email to santhar1500@gmail.com');
+            });
+        }
+        
         contactForm.reset();
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        alert('Failed to send message. Please try again.');
-    });
-    */
+        return;
+    }
+    
+    // Formspree is configured - let it handle submission
+    // Don't prevent default - let form submit normally to Formspree
+    
+    // Show sending status
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    submitBtn.disabled = true;
+    
+    // Formspree will handle the rest
+    // After successful submission, Formspree shows thank you page
 });
 
 // ====================================
