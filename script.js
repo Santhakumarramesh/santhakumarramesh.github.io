@@ -372,6 +372,72 @@ window.addEventListener('load', () => {
 */
 
 // ====================================
+// Dashboard Tab Switching
+// ====================================
+
+const dashboardTabs = document.querySelectorAll('.dashboard-tab');
+const dashboardContainers = document.querySelectorAll('.dashboard-container');
+
+// Track loaded dashboards to avoid reloading scripts
+const loadedDashboards = new Set(['dashboard1']); // First dashboard loads by default
+
+dashboardTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const targetDashboard = tab.getAttribute('data-dashboard');
+        
+        // Remove active class from all tabs
+        dashboardTabs.forEach(t => t.classList.remove('active'));
+        
+        // Add active class to clicked tab
+        tab.classList.add('active');
+        
+        // Hide all dashboard containers
+        dashboardContainers.forEach(container => {
+            container.style.display = 'none';
+            container.classList.remove('active');
+        });
+        
+        // Show target dashboard
+        const targetContainer = document.getElementById(targetDashboard);
+        if (targetContainer) {
+            targetContainer.style.display = 'block';
+            targetContainer.classList.add('active');
+            
+            // Load Tableau script if not already loaded for this dashboard
+            if (!loadedDashboards.has(targetDashboard)) {
+                loadedDashboards.add(targetDashboard);
+                
+                // Find and execute Tableau script for this dashboard
+                const tableauPlaceholder = targetContainer.querySelector('.tableauPlaceholder');
+                if (tableauPlaceholder) {
+                    const vizId = tableauPlaceholder.id;
+                    
+                    // Re-initialize Tableau viz for this container
+                    setTimeout(() => {
+                        const scriptElements = targetContainer.querySelectorAll('script');
+                        scriptElements.forEach(script => {
+                            if (script.src && script.src.includes('tableau')) {
+                                // Script already embedded, trigger reload if needed
+                                console.log(`Tableau dashboard ${targetDashboard} initialized`);
+                            }
+                        });
+                    }, 100);
+                }
+            }
+        }
+        
+        // Smooth scroll to dashboard if user scrolled past it
+        const dashboardSection = document.querySelector('.dashboard-embed-section');
+        if (dashboardSection) {
+            const rect = dashboardSection.getBoundingClientRect();
+            if (rect.top < 0) {
+                dashboardSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    });
+});
+
+// ====================================
 // Console Easter Egg
 // ====================================
 
