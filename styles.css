@@ -610,9 +610,22 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
     border-radius: 50%;
-    border: 5px solid var(--primary-color);
-    box-shadow: 0 0 30px rgba(37, 99, 235, 0.5);
+    border: 6px solid var(--primary-color);
+    box-shadow: 
+        0 0 40px rgba(37, 99, 235, 0.6),
+        0 20px 60px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    filter: brightness(1.05) contrast(1.1);
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 50px rgba(37, 99, 235, 0.8),
+        0 25px 70px rgba(0, 0, 0, 0.4);
+    border-color: var(--secondary-color);
 }
 
 .stats-grid {
@@ -1149,6 +1162,185 @@ a {
 }
 
 /* ====================================
+   Dashboard Tabs Styling
+   ==================================== */
+.dashboard-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dashboard-tab {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-tertiary);
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: var(--transition-normal);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.dashboard-tab:hover {
+    background: var(--bg-secondary);
+    border-color: var(--primary-color);
+    color: var(--text-primary);
+    transform: translateY(-2px);
+}
+
+.dashboard-tab.active {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 5px 20px rgba(37, 99, 235, 0.4);
+}
+
+.dashboard-tab i {
+    font-size: 1rem;
+}
+
+.dashboard-container {
+    width: 100%;
+    min-height: 600px;
+    background: var(--bg-primary);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.dashboard-container.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.dashboard-embed-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--border-color);
+}
+
+.dashboard-embed-section h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.dashboard-note {
+    background: rgba(37, 99, 235, 0.1);
+    border-left: 4px solid var(--primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.dashboard-note i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.dashboard-note strong {
+    color: var(--text-primary);
+}
+
+/* Tableau embed responsive adjustments */
+.tableauPlaceholder {
+    width: 100% !important;
+}
+
+.tableauViz {
+    width: 100% !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Featured Dashboard Project Card Enhancement */
+.project-card.featured-dashboard {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(15, 23, 42, 0.8));
+    border: 2px solid var(--primary-color);
+}
+
+.project-card.featured-dashboard .project-image.dashboard-preview {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.8), rgba(6, 182, 212, 0.8));
+    position: relative;
+}
+
+.dashboard-badge {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: var(--bg-secondary);
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.metric-item {
+    text-align: center;
+    padding: 1rem;
+}
+
+.metric-item i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.metric-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+.metric-label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* ====================================
    Education Section
    ==================================== */
 .education {
@@ -1667,6 +1859,30 @@ a {
     
     .experience-card {
         padding: 1.5rem;
+    }
+
+    .dashboard-tabs {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .dashboard-tab {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .dashboard-container {
+        min-height: 400px;
+        padding: 0.5rem;
+    }
+
+    .dashboard-metrics {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .project-card.featured-dashboard {
+        grid-column: 1;
     }
 }
 
