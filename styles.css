@@ -1066,6 +1066,28 @@ a {
     gap: 2rem;
 }
 
+/* Landscape layout for Motor Balance and NHANES projects */
+.project-landscape {
+    grid-column: span 1;
+}
+
+/* Force 2-column layout for landscape projects on desktop */
+@media (min-width: 769px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Featured projects span full width */
+    .project-card.featured-dashboard {
+        grid-column: 1 / -1;
+    }
+    
+    /* Landscape projects stay side by side */
+    .project-landscape {
+        grid-column: span 1;
+    }
+}
+
 .project-card {
     background: var(--bg-primary);
     border-radius: 1rem;
