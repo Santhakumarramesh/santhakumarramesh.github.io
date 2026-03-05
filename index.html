@@ -746,7 +746,61 @@
                     </div>
                 </div>
 
-                <!-- Project 2: Research Assistant - Occupational Heavy Metal Exposure -->
+                <!-- Project 2: Motor Balance Analysis - Welding Exposure vs Parkinson's -->
+                <div class="project-card" data-category="ml analysis">
+                    <div class="project-image">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Motor Balance Analysis | Welding Exposure vs Hoehn & Yahr Stages</h3>
+                        <p><strong>University at Buffalo | 2025 | Pilot Research Study</strong></p>
+                        <p>Developed a data-driven framework comparing motor balance impairment between Parkinson's Disease patients and occupational welders, introducing a novel Preliminary Welding Exposure Staging System (W1–W5) modeled after the Hoehn & Yahr neurological scale.</p>
+                        
+                        <div class="dashboard-metrics">
+                            <div class="metric-item">
+                                <i class="fas fa-bullseye"></i>
+                                <span class="metric-value">96.7%</span>
+                                <span class="metric-label">Fall Risk Accuracy</span>
+                            </div>
+                            <div class="metric-item">
+                                <i class="fas fa-users"></i>
+                                <span class="metric-value">30</span>
+                                <span class="metric-label">Patients</span>
+                            </div>
+                            <div class="metric-item">
+                                <i class="fas fa-cogs"></i>
+                                <span class="metric-value">48</span>
+                                <span class="metric-label">Features</span>
+                            </div>
+                        </div>
+
+                        <ul class="project-details">
+                            <li><strong>Novel Staging Framework:</strong> Designed 5-stage welding exposure classification (W1–W5) using clinically readable cutpoints with Cumulative Exposure Index capturing noise, vibration, fume levels, work hours, and PPE usage</li>
+                            <li><strong>End-to-End ML Pipeline:</strong> Built full ETL + feature engineering pipeline producing 48 features — normalized scores, deficit measures, composite balance indices, and age × balance interaction terms from raw clinical data</li>
+                            <li><strong>Cross-Population Prediction:</strong> Trained 4 models on PD patients (H&Y ground truth) using only common clinical features, then applied to welders generating H&Y-like severity scores with 71.4% ±1-stage accuracy via LOOCV</li>
+                            <li><strong>Multi-Task Classification:</strong> Delivered 3 parallel systems: Motor Balance Severity (5-class, RF 96.7%), Group Classification PD vs Welder (LR 93.3%), Fall Risk Prediction (XGBoost 96.7%)</li>
+                            <li><strong>Clinical Insights:</strong> Spearman correlations revealed H&Y Stage predicts BBS (ρ=−0.553, p<0.05) and FES (ρ=+0.564, p<0.05); 79% PD patients vs 19% welders met high fall-risk threshold</li>
+                        </ul>
+
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">XGBoost</span>
+                            <span class="tag">Clinical Data Science</span>
+                            <span class="tag">Feature Engineering</span>
+                            <span class="tag">LOOCV</span>
+                            <span class="tag">Multi-class Classification</span>
+                            <span class="tag">Occupational Health</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Santhakumarramesh/motor-balance-welding-analysis" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Research Assistant - Occupational Heavy Metal Exposure -->
                 <div class="project-card" data-category="ml analysis">
                     <div class="project-image">
                         <i class="fas fa-microscope"></i>
@@ -776,7 +830,7 @@
                     </div>
                 </div>
 
-                <!-- Project 3: Flight Delay Prediction -->
+                <!-- Project 4: Flight Delay Prediction -->
                 <div class="project-card" data-category="ml">
                     <div class="project-image">
                         <i class="fas fa-plane"></i>
@@ -805,7 +859,7 @@
                     </div>
                 </div>
 
-                <!-- Project 4: Cardiovascular Risk Analysis -->
+                <!-- Project 5: Cardiovascular Risk Analysis -->
                 <div class="project-card" data-category="ml analysis">
                     <div class="project-image">
                         <i class="fas fa-heartbeat"></i>
@@ -834,7 +888,7 @@
                     </div>
                 </div>
 
-                <!-- Project 5: Hospital Visit Analysis Dashboard - ENHANCED -->
+                <!-- Project 6: Hospital Visit Analysis Dashboard - ENHANCED -->
                 <div class="project-card featured-dashboard" data-category="visualization">
                     <div class="project-image dashboard-preview">
                         <i class="fas fa-hospital"></i>
@@ -986,7 +1040,7 @@
                     </div>
                 </div>
 
-                <!-- Project 6: F1 Insights & Predictive Analysis -->
+                <!-- Project 7: F1 Insights & Predictive Analysis -->
                 <div class="project-card" data-category="ml visualization">
                     <div class="project-image">
                         <i class="fas fa-flag-checkered"></i>
