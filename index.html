@@ -1,1235 +1,479 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Santhakumar Ramesh - AI/ML Engineer | Machine Learning, NLP, and Applied AI at DXC Technology">
-    <meta name="keywords" content="AI Engineer, Machine Learning Engineer, Deep Learning, MLOps, Python, TensorFlow, PyTorch, AWS, Azure, Docker, Kubernetes, NLP, Computer Vision">
-    <meta name="author" content="Santhakumar Ramesh">
-    <title>Santhakumar | AI/ML Engineer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Santhakumar Ramesh | AI/ML Engineer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-bright": "#363940",
+                        "surface": "#10131a",
+                        "on-secondary-container": "#c4abff",
+                        "outline": "#8c909f",
+                        "surface-tint": "#adc6ff",
+                        "background": "#10131a",
+                        "surface-container-highest": "#32353c",
+                        "on-primary-fixed-variant": "#004395",
+                        "on-secondary-fixed-variant": "#5516be",
+                        "secondary-fixed-dim": "#d0bcff",
+                        "surface-container-high": "#272a31",
+                        "surface-variant": "#32353c",
+                        "primary-fixed": "#d8e2ff",
+                        "error-container": "#93000a",
+                        "on-error": "#690005",
+                        "on-surface": "#e1e2eb",
+                        "inverse-surface": "#e1e2eb",
+                        "on-tertiary": "#2c3136",
+                        "surface-container-lowest": "#0b0e14",
+                        "outline-variant": "#424754",
+                        "on-error-container": "#ffdad6",
+                        "secondary-fixed": "#e9ddff",
+                        "primary-container": "#4d8eff",
+                        "on-primary-container": "#00285d",
+                        "on-surface-variant": "#c2c6d6",
+                        "tertiary": "#c3c7cd",
+                        "tertiary-container": "#8d9197",
+                        "on-tertiary-fixed": "#171c20",
+                        "on-primary": "#002e6a",
+                        "tertiary-fixed": "#dfe3e9",
+                        "surface-container": "#1d2026",
+                        "primary-fixed-dim": "#adc6ff",
+                        "tertiary-fixed-dim": "#c3c7cd",
+                        "on-primary-fixed": "#001a42",
+                        "on-secondary-fixed": "#23005c",
+                        "inverse-primary": "#005ac2",
+                        "primary": "#adc6ff",
+                        "surface-dim": "#10131a",
+                        "on-background": "#e1e2eb",
+                        "surface-container-low": "#191c22",
+                        "inverse-on-surface": "#2e3037",
+                        "secondary-container": "#571bc1",
+                        "on-tertiary-container": "#252a2f",
+                        "secondary": "#d0bcff",
+                        "on-secondary": "#3c0091",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#43474c"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #0b0e14; color: #e1e2eb; }
+        .font-headline { font-family: 'Space Grotesk', sans-serif; }
+        .glass-card {
+            background: rgba(29, 32, 38, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #adc6ff 0%, #d0bcff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4d8eff 0%, #571bc1 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="#home">
-                    <i class="fas fa-chart-line"></i>
-                    <span>Santhakumar</span>
-                </a>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="Santhakumar_Ramesh_Resume_AIMLEngineer.pdf" class="nav-link nav-resume" download><i class="fas fa-download"></i> Resume</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Santhakumar Ramesh</span>
-                </h1>
-                <h2 class="hero-subtitle">AI/ML Engineer | Machine Learning, NLP, and Applied AI</h2>
-                <p class="hero-tagline">Building machine learning systems, NLP pipelines, and applied AI products with Python, FastAPI, AWS, and Azure.</p>
-                <p class="hero-description">AI/ML Engineer Intern at DXC Technology | Former Mphasis ML Engineer | MS in Data Science, University at Buffalo</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="Santhakumar_Ramesh_Resume_AIMLEngineer.pdf" class="btn btn-primary" download>Download Resume</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                </div>
-                <div class="hero-metrics">
-                    <div class="metric-pill"><i class="fas fa-bullseye"></i> Current Focus: Applied AI / ML Engineering</div>
-                    <div class="metric-pill"><i class="fas fa-cubes"></i> 3 live AI products</div>
-                    <div class="metric-pill"><i class="fas fa-clock"></i> 2+ yrs Experience</div>
-                    <div class="metric-pill"><i class="fas fa-database"></i> 17,880+ Records Analyzed</div>
-                    <div class="metric-pill"><i class="fas fa-chart-line"></i> 98.4% Accuracy Rate</div>
-                    <div class="metric-pill"><i class="fas fa-cloud"></i> AWS / Azure / Docker</div>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Santhakumarramesh" target="_blank" rel="noopener noreferrer" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/santhakumar-ramesh/" target="_blank" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:santhakumar0527@gmail.com" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="floating-card card-1">
-                    <i class="fas fa-robot"></i>
-                    <h3>Deep Learning</h3>
-                </div>
-                <div class="floating-card card-2">
-                    <i class="fas fa-cloud"></i>
-                    <h3>MLOps & Cloud</h3>
-                </div>
-                <div class="floating-card card-3">
-                    <i class="fab fa-python"></i>
-                    <h3>Python & ML</h3>
-                </div>
-                <div class="floating-card card-4">
-                    <i class="fas fa-brain"></i>
-                    <h3>NLP & AI</h3>
-                </div>
-                <div class="floating-card card-5">
-                    <i class="fab fa-docker"></i>
-                    <h3>Docker & K8s</h3>
-                </div>
-                <div class="floating-card card-6">
-                    <i class="fas fa-project-diagram"></i>
-                    <h3>Data Pipelines</h3>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <a href="#about">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <img src="profile.jpg" alt="Santhakumar - AI/ML Engineer" class="profile-photo">
-                    </div>
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <h3>ML Pipelines</h3>
-                            <p class="stat-title">End-to-End</p>
-                            <p class="stat-description">Data to deployment.</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>NLP</h3>
-                            <p class="stat-title">Text & GenAI</p>
-                            <p class="stat-description">Classification, RAG, LLMs.</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>Cloud & MLOps</h3>
-                            <p class="stat-title">AWS, Azure, Docker</p>
-                            <p class="stat-description">Production deployment.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <p class="about-tagline">
-                        AI/ML Engineer with hands-on experience building machine learning pipelines, NLP systems, and deployed AI applications. Currently working as an AI/ML Engineer Intern at <strong>DXC Technology</strong>, with prior experience at <strong>Mphasis</strong> and an <strong>MS in Data Science from University at Buffalo</strong>. Skilled in Python, SQL, PySpark, Scikit-learn, XGBoost, TensorFlow, PyTorch, FastAPI, Docker, AWS, and Azure, with a focus on model development, evaluation, deployment, and applied business use cases.
+<body class="selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-xl border-b border-white/10 shadow-2xl shadow-blue-500/10">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-400">terminal</span>
+<span class="text-xl font-bold bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent font-['Space_Grotesk'] tracking-tight">Santhakumar Ramesh</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center text-sm font-medium">
+<a class="text-slate-400 hover:text-white transition-colors" href="#about">About</a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#skills">Skills</a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#projects">Projects</a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#experience">Experience</a>
+</nav>
+<a class="inline-block bg-primary-container text-on-primary-container px-5 py-2 rounded-xl text-sm font-bold active:scale-95 transition-transform duration-200" href="Santhakumar_Ramesh_Resume_AIMLEngineer.pdf" download>Download Resume</a>
+</div>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 py-16 md:py-32 grid md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest border border-outline-variant/20">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">AI/ML Engineer Intern at DXC Technology | Former Mphasis ML Engineer | MS in Data Science, University at Buffalo</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-headline font-bold leading-tight">AI/ML Engineer | Machine Learning, NLP, and Applied AI</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed">Building machine learning systems, NLP pipelines, and applied AI products with Python, FastAPI, AWS, and Azure.</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="gradient-bg text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-opacity" href="#projects">View Projects <span class="material-symbols-outlined">arrow_forward</span></a>
+<a class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-xl font-bold border border-outline-variant/20 hover:bg-surface-bright transition-colors" href="#contact">Contact Me</a>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<!-- System Status Panel Card -->
+<div class="glass-card rounded-xl p-8 border border-outline-variant/10 shadow-2xl relative z-10">
+<div class="flex justify-between items-start mb-8">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-primary font-bold mb-1">Current Status</p>
+<h3 class="text-2xl font-headline font-bold">Applied AI / ML Engineering</h3>
+</div>
+<span class="material-symbols-outlined text-primary text-4xl">memory</span>
+</div>
+<div class="space-y-6">
+<div class="flex items-center justify-between p-4 rounded-lg bg-surface-container-low"><span class="text-on-surface-variant text-sm">Live AI Products</span><span class="text-primary font-bold">3</span></div>
+<div class="p-4 rounded-lg bg-surface-container-low"><p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Specializations</p><p class="text-sm font-medium">ML, NLP, RAG, Deployment</p></div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-3 rounded-lg bg-surface-container-low border border-outline-variant/5"><span class="text-on-surface-variant text-sm">Live AI Products</span><span class="text-primary font-bold">3</span></div>
+<div class="p-3 rounded-lg bg-surface-container-low border border-outline-variant/5">
+<p class="text-[10px] text-on-surface-variant uppercase">Projects</p>
+<p class="text-lg font-bold">3 Live AI</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Ambient Glow -->
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/20 blur-[100px] rounded-full"></div>
+<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-secondary/20 blur-[100px] rounded-full"></div>
+</div>
+</section>
+<!-- Metrics Strip -->
+<section class="bg-surface-container-lowest border-y border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-6 py-12">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+<div class="text-center md:text-left">
+<p class="text-3xl font-headline font-bold text-primary">3</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider font-medium">Live AI Products</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-3xl font-headline font-bold text-primary">2+ yrs</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider font-medium">Experience</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-3xl font-headline font-bold text-primary">17,880+</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider font-medium">Records Analyzed</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-3xl font-headline font-bold text-primary">98.4%</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider font-medium">Accuracy Rate</p>
+</div>
+<div class="text-center md:text-left col-span-2 md:col-span-1">
+<p class="text-3xl font-headline font-bold text-primary flex justify-center md:justify-start gap-2">
+<span class="material-symbols-outlined">cloud</span>
+<span class="material-symbols-outlined">terminal</span>
+</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider font-medium">AWS / Azure / Docker</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="max-w-7xl mx-auto px-6 py-24" id="about">
+<div class="flex flex-col md:flex-row gap-16 items-start">
+<div class="md:w-1/3 sticky top-32">
+<h2 class="text-4xl font-headline font-bold mb-4">Architecture of Intelligence</h2>
+<div class="w-12 h-1 bg-primary rounded-full"></div>
+</div>
+<div class="md:w-2/3 space-y-8">
+<p class="text-2xl text-on-surface leading-relaxed">I am an AI/ML Engineer focused on translating data, models, and experimentation into deployed, production-ready systems.</p>
+<p class="text-lg text-on-surface-variant leading-relaxed">AI/ML Engineer with hands-on experience building machine learning pipelines, NLP systems, and deployed AI applications. Currently working as an AI/ML Engineer Intern at DXC Technology, with prior experience at Mphasis and an MS in Data Science from the University at Buffalo. Skilled in Python, SQL, PySpark, Scikit-learn, XGBoost, TensorFlow, PyTorch, FastAPI, Docker, AWS, and Azure, with a focus on model development, evaluation, deployment, and applied business use cases.</p>
+</div>
+</div>
+</section>
+<!-- Core Competencies -->
+<section class="max-w-7xl mx-auto px-6 py-24" id="skills">
+<h2 class="text-3xl font-headline font-bold mb-12 flex items-center gap-4">
+                Core Competencies <span class="text-sm font-normal text-outline-variant font-body">01 // Skills Matrix</span>
+</h2>
+<div class="grid md:grid-cols-3 gap-6">
+<!-- Skill Card 1 -->
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/5 hover:bg-surface-container-high transition-all group">
+<span class="material-symbols-outlined text-primary mb-4 block group-hover:scale-110 transition-transform">analytics</span>
+<h3 class="text-xl font-bold mb-3">Machine Learning</h3>
+<p class="text-sm text-on-surface-variant mb-4">High-performance predictive modeling and experimentation.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">Python</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">Scikit-learn</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">XGBoost</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">LightGBM</span>
+</div>
+</div>
+<!-- Skill Card 2 -->
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/5 hover:bg-surface-container-high transition-all group">
+<span class="material-symbols-outlined text-secondary mb-4 block group-hover:scale-110 transition-transform">language</span>
+<h3 class="text-xl font-bold mb-3">NLP</h3>
+<p class="text-sm text-on-surface-variant mb-4">Deep linguistic analysis and transformer-based understanding.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">SpaCy</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">Transformers</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">NLTK</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">Topic Modeling</span>
+</div>
+</div>
+<!-- Skill Card 3 -->
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/5 hover:bg-surface-container-high transition-all group">
+<span class="material-symbols-outlined text-primary mb-4 block group-hover:scale-110 transition-transform">psychology</span>
+<h3 class="text-xl font-bold mb-3">Generative AI / RAG</h3>
+<p class="text-sm text-on-surface-variant mb-4">Architecting next-gen conversational agents and knowledge systems.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">LangChain</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">FAISS</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">GPT-4o</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">LLM Eval</span>
+</div>
+</div>
+<!-- Skill Card 4 -->
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/5 hover:bg-surface-container-high transition-all group">
+<span class="material-symbols-outlined text-secondary mb-4 block group-hover:scale-110 transition-transform">inventory_2</span>
+<h3 class="text-xl font-bold mb-3">MLOps</h3>
+<p class="text-sm text-on-surface-variant mb-4">Containerization and automated lifecycle management.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">Docker</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">Kubernetes</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">CI/CD</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">MLflow</span>
+</div>
+</div>
+<!-- Skill Card 5 -->
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/5 hover:bg-surface-container-high transition-all group">
+<span class="material-symbols-outlined text-primary mb-4 block group-hover:scale-110 transition-transform">database</span>
+<h3 class="text-xl font-bold mb-3">Data Engineering</h3>
+<p class="text-sm text-on-surface-variant mb-4">Scalable ETL pipelines and robust data warehousing.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">SQL / NoSQL</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">Spark</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">ETL</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">Data Validation</span>
+</div>
+</div>
+<!-- Skill Card 6 -->
+<div class="bg-surface-container rounded-xl p-6 border border-outline-variant/5 hover:bg-surface-container-high transition-all group">
+<span class="material-symbols-outlined text-secondary mb-4 block group-hover:scale-110 transition-transform">cloud_upload</span>
+<h3 class="text-xl font-bold mb-3">Cloud Deployment</h3>
+<p class="text-sm text-on-surface-variant mb-4">Global infrastructure and serverless API ecosystems.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">AWS</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">Azure</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">Serverless</span>
+<span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">API Gateway</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Timeline -->
+<section class="bg-surface-container-low py-24" id="experience">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-3xl font-headline font-bold mb-16">Professional Trajectory</h2>
+<div class="relative space-y-16 after:content-[''] after:absolute after:left-4 md:after:left-1/2 after:top-0 after:bottom-0 after:w-px after:bg-outline-variant/20">
+<!-- DXC -->
+<div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center group">
+<div class="hidden md:block w-1/2 pr-12 text-right">
+<h3 class="text-xl font-bold">DXC Technology</h3>
+<p class="text-primary font-medium">AI / Machine Learning Engineer Intern</p>
+<p class="text-sm text-on-surface-variant mt-2">USA | Jan 2026 – Present</p>
+</div>
+<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-highest border-4 border-background z-10 flex items-center justify-center group-hover:border-primary transition-colors">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<div class="w-full md:w-1/2 pl-12">
+<div class="md:hidden mb-4">
+<h3 class="text-xl font-bold">DXC Technology</h3>
+<p class="text-primary font-medium">AI / Machine Learning Engineer Intern</p>
+</div>
+<ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4">
+<li>Designed and evaluated ML solutions for forecasting and analytics using Python, Scikit-learn, TensorFlow, and PyTorch.</li>
+<li>Built scalable SQL and PySpark pipelines for batch and near real-time inference across enterprise workflows.</li>
+<li>Developed CNN and LSTM models for pattern recognition and time-series forecasting.</li>
+<li>Supported deployment using Docker, Kubernetes, AWS, and Azure managed ML environments.</li>
+<li>Built monitoring dashboards and collaborated with stakeholders on validation and production visibility.</li>
+<li>Tools: Python, TensorFlow, PyTorch, Scikit-learn, PySpark, SQL, Docker, Kubernetes, AWS, Azure, CI/CD, Power BI.</li>
+</ul>
+</div>
+</div>
+<!-- Mphasis -->
+<div class="relative flex flex-col md:flex-row-reverse md:justify-between items-start md:items-center group">
+<div class="hidden md:block w-1/2 pl-12 text-left">
+<h3 class="text-xl font-bold">Mphasis</h3>
+<p class="text-secondary font-medium">Machine Learning Engineer</p>
+<p class="text-sm text-on-surface-variant mt-2">India | Intern: Aug–Dec 2023 • Full-time: Jan 2024–Dec 2024</p>
+</div>
+<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-highest border-4 border-background z-10 flex items-center justify-center group-hover:border-secondary transition-colors">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="w-full md:w-1/2 pr-12 text-left md:text-right">
+<div class="md:hidden mb-4">
+<h3 class="text-xl font-bold">Mphasis</h3>
+<p class="text-secondary font-medium">Machine Learning Engineer</p>
+</div>
+<ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4 md:pl-0 md:list-none">
+<li>Developed and implemented ML models using Python, SQL, and Scikit-learn to automate data-driven decision processes.</li>
+<li>Built data preprocessing and feature engineering pipelines for large datasets.</li>
+<li>Designed predictive analytics solutions for classification and regression using ensemble methods.</li>
+<li>Worked with NLP techniques including text preprocessing, vectorization, and sentiment analysis.</li>
+<li>Used Apache Spark and distributed computing to process high-volume datasets.</li>
+<li>Supported model deployment with Docker and CI/CD pipeline setup.</li>
+<li>Tools: Python, SQL, Scikit-learn, Apache Spark, NLP, Docker, CI/CD, Agile/Scrum.</li>
+</ul>
+</div>
+</div>
+<!-- UB -->
+<div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center group">
+<div class="hidden md:block w-1/2 pr-12 text-right">
+<h3 class="text-xl font-bold">University at Buffalo</h3>
+<p class="text-primary font-medium">MS in Data Science &amp; Applications</p>
+<p class="text-sm text-on-surface-variant mt-2">Jan 2025 – Dec 2025 | Graduated</p>
+</div>
+<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-highest border-4 border-background z-10 flex items-center justify-center group-hover:border-primary transition-colors">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<div class="w-full md:w-1/2 pl-12">
+<div class="md:hidden mb-4">
+<h3 class="text-xl font-bold">University at Buffalo</h3>
+<p class="text-primary font-medium">MS in Data Science &amp; Applications</p>
+</div>
+<ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4">
+<li>Coursework: Statistical Data Mining I &amp; II, Deep Learning, Data Models &amp; Query Language, Data Intensive Computing.</li>
+<li>GPA: 3.097</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects -->
+<section class="max-w-7xl mx-auto px-6 py-24" id="projects">
+<h2 class="text-3xl font-headline font-bold mb-12">Deployments &amp; Lab Work</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- JobGuard AI -->
+<div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/5 flex flex-col">
+<div class="h-48 bg-surface-container-high relative overflow-hidden group">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Cybersecurity dashboard visualizing fake job detection metrics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXdRVOrl0XDNCdR0ksNXaFRWVlqUTRczJOlAc7CptAvFVIu1SoX9uvakryzq37dGL51UJehPN-u77PfX3SyPC3sO3OM6Rk2QGcGK7q7CY_TgXi7NTyyOtfLgF4t8psaOojdN0Evdac-K6KT5lOPJSwLay_a3dT7ciYBoUuULrSeZ4PM-AxszbUgAjaVdFRtHlBUM0ID2bazP-AiRNAvvgVBEBsrYwxjJUpmi4Ck7rvnNx7uRacaoSgF2sUV7puk-KaI9dezewGp2I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="text-[10px] px-2 py-1 rounded-md bg-primary/20 text-primary font-bold backdrop-blur-md">NLP + FRAUD DETECTION</span>
+</div>
+</div>
+<div class="p-6 flex-grow space-y-4">
+<h3 class="text-xl font-bold">JobGuard AI — Fake Job Posting Detector</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                            A real-time fake job posting detector utilizing TF-IDF and Random Forest classifiers to flag fraudulent listings with 96% precision.
+                        </p>
+<div class="flex flex-wrap gap-2">
+<span class="text-[10px] font-bold text-outline">SKLEARN</span>
+<span class="text-[10px] font-bold text-outline">PYTHON</span>
+<span class="text-[10px] font-bold text-outline">HUGGING FACE</span>
+</div>
+</div>
+<div class="p-6 pt-0 flex gap-4">
+<a class="flex-1 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors text-center" href="https://huggingface.co/spaces" target="_blank" rel="noopener noreferrer">Demo</a>
+<a class="flex-1 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors text-center" href="https://github.com/Santhakumarramesh/jobguard-ai" target="_blank" rel="noopener noreferrer">GitHub</a>
+</div>
+</div>
+<!-- CareCopilot AI -->
+<div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/5 flex flex-col">
+<div class="h-48 bg-surface-container-high relative overflow-hidden group">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="AI interface showing healthcare diagnosis assistant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwvEEMvOFt0CjL8mvbBvmsIguwam7msmPBSM4wPVMTFHDc_VDZQTmeAWYRz7yyDJiB4tGbGDnvjYn8qZkchxpTVETCjhEVkZI1oHJY-wgP6ph0FqCT8C74nNJeRjLa2XGTP7WTe3uNnjWv4Egi0VmH67xbee4ppWCbXI8K93-QFO1MvIRQSEjtdCAkkY9QCUVVJVfngVd48zPh3eukhVBNfC1cf9VOazqKya8pKJWxrMMOQMNXCBmEtSwdeo8pr4sIRzuHrVJ06Uc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="text-[10px] px-2 py-1 rounded-md bg-secondary/20 text-secondary font-bold backdrop-blur-md">RAG + LANGGRAPH</span>
+</div>
+</div>
+<div class="p-6 flex-grow space-y-4">
+<h3 class="text-xl font-bold">CareCopilot AI — Healthcare RAG Assistant</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                            Healthcare-centric RAG system with state-managed conversations via LangGraph. Secure FAISS vector storage and JWT-based RBAC.
+                        </p>
+<div class="flex flex-wrap gap-2">
+<span class="text-[10px] font-bold text-outline">GPT-4o</span>
+<span class="text-[10px] font-bold text-outline">FASTAPI</span>
+<span class="text-[10px] font-bold text-outline">FAISS</span>
+</div>
+</div>
+<div class="p-6 pt-0 flex gap-4">
+<a class="flex-1 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors text-center" href="https://github.com/Santhakumarramesh?tab=repositories" target="_blank" rel="noopener noreferrer">Demo</a>
+<a class="flex-1 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors text-center" href="https://github.com/Santhakumarramesh?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+</div>
+</div>
+<!-- Smart Grievance -->
+<div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/5 flex flex-col">
+<div class="h-48 bg-surface-container-high relative overflow-hidden group">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Technical dashboard showing real-time ticketing system" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH1g41VXU9Uhkr5bHMsME76o9UxlHnftGbIRUkXb8mV-zfdaxK2VnZy6LLsdwBmIY5KTp-Y45YvPGaZn8vliVe380gqZyc-xZ5RYyG-nVMVARBztxiPR9QZ6N2to737CTXnORuQkwSJaa2-yZh4TP2jrOtVT2HKSboKxuXER6nzkiMOSiWxyH_ze8fObpEPnEYJs2NHGk3wYWyuHxbEnQ_aFfj_6qs7rSE-4Wma1uXHG9n50EWvbFA0o3usE2bocx8yas4Jbec8JE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="text-[10px] px-2 py-1 rounded-md bg-primary/20 text-primary font-bold backdrop-blur-md">SYSTEM ARCHITECTURE</span>
+</div>
+</div>
+<div class="p-6 flex-grow space-y-4">
+<h3 class="text-xl font-bold">Smart Grievance System — AI Complaint Routing Platform</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                            AI-driven complaint routing platform with multilingual NLP support and real-time status tracking for large-scale organizations.
+                        </p>
+<div class="flex flex-wrap gap-2">
+<span class="text-[10px] font-bold text-outline">PYTHON</span>
+<span class="text-[10px] font-bold text-outline">SQL</span>
+<span class="text-[10px] font-bold text-outline">STREAMLIT</span>
+</div>
+</div>
+<div class="p-6 pt-0 flex gap-4">
+<a class="flex-1 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors text-center" href="https://github.com/Santhakumarramesh?tab=repositories" target="_blank" rel="noopener noreferrer">Demo</a>
+<a class="flex-1 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors text-center" href="https://github.com/Santhakumarramesh?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-5xl mx-auto px-6 py-24" id="contact">
+<div class="bg-gradient-to-br from-surface-container to-surface-container-high rounded-2xl p-12 text-center border border-outline-variant/10 relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-4xl font-headline font-bold mb-6">Let's build the next generation of AI.</h2>
+<p class="text-lg text-on-surface-variant mb-10 max-w-xl mx-auto">
+                        Currently seeking AI/ML Engineer and Data Science opportunities. STEM OPT Authorized.
                     </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>End-to-End ML/DL Solutions</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>MLOps & Production Deployment</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Cloud Platforms (AWS, Azure)</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>NLP, Computer Vision, Time-Series</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Generative AI (LangChain, LLMs)</span>
-                        </div>
-                    </div>
-                    <div class="about-buttons">
-                        <a href="https://www.linkedin.com/in/santhakumar-ramesh/" target="_blank" class="btn btn-primary">
-                            <i class="fab fa-linkedin"></i> LinkedIn Profile
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<a class="bg-primary text-on-primary font-bold px-8 py-4 rounded-xl hover:shadow-[0_0_20px_rgba(173,198,255,0.3)] transition-all" href="mailto:santhakumar0527@gmail.com">
+                            Hire Me
                         </a>
-                        <a href="https://github.com/Santhakumarramesh" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                            <i class="fab fa-github"></i> GitHub Profile
-                        </a>
-                    </div>
-                    <div class="about-buttons" style="margin-top: 1rem;">
-                        <a href="Santhakumar_Ramesh_Resume_AIMLEngineer.pdf" target="_blank" class="btn btn-accent">
-                            <i class="fas fa-file-pdf"></i> View Resume
-                        </a>
-                        <a href="Santhakumar_Ramesh_Resume_AIMLEngineer.pdf" class="btn btn-outline" download>
-                            <i class="fas fa-download"></i> Download Resume
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Professional Experience</h2>
-                <div class="title-underline"></div>
-                <p class="section-description">ML pipelines, NLP systems, and deployed AI applications</p>
-            </div>
-            
-            <div class="experience-container">
-                <!-- DXC Technology Position -->
-                <div class="experience-card featured">
-                    <div class="experience-header">
-                        <div class="experience-title-section">
-                            <h3>AI/ML Engineer Intern</h3>
-                            <h4>DXC Technology</h4>
-                            <div class="experience-meta">
-                                <span class="experience-location">
-                                    <i class="fas fa-map-marker-alt"></i> USA
-                                </span>
-                                <span class="experience-duration">
-                                    <i class="fas fa-calendar-alt"></i> July 2025 – Present
-                                </span>
-                                <span class="experience-badge">Current Position</span>
-                            </div>
-                        </div>
-                        <div class="experience-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="experience-content">
-                        <div class="experience-description">
-                            <p>
-                                <strong>Role:</strong> Designing and deploying end-to-end machine learning and deep learning solutions for enterprise-scale prediction and classification problems.
-                            </p>
-                        </div>
-                        
-                        <div class="experience-achievements">
-                            <h5><i class="fas fa-trophy"></i> Key Achievements & Responsibilities:</h5>
-                            <ul>
-                                <li>Designed and evaluated ML solutions for forecasting and analytics use cases using <strong>Python, Scikit-learn, TensorFlow, and PyTorch</strong>.</li>
-                                <li>Built scalable <strong>SQL and PySpark pipelines</strong> for batch and near real-time inference across enterprise workflows.</li>
-                                <li>Developed <strong>CNN and LSTM models</strong> for pattern recognition and time-series forecasting.</li>
-                                <li>Supported deployment using <strong>Docker, Kubernetes, AWS, and Azure</strong> managed ML environments.</li>
-                                <li>Built monitoring dashboards and collaborated with stakeholders to improve validation and production visibility.</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="experience-tech">
-                            <h5><i class="fas fa-code"></i> Technologies Used:</h5>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">TensorFlow</span>
-                                <span class="tech-tag">PyTorch</span>
-                                <span class="tech-tag">Scikit-learn</span>
-                                <span class="tech-tag">PySpark</span>
-                                <span class="tech-tag">SQL</span>
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">Kubernetes</span>
-                                <span class="tech-tag">AWS</span>
-                                <span class="tech-tag">Azure</span>
-                                <span class="tech-tag">CI/CD</span>
-                                <span class="tech-tag">Power BI</span>
-                                <span class="tech-tag">CNN</span>
-                                <span class="tech-tag">LSTM</span>
-                            </div>
-                        </div>
-                        
-                        <div class="experience-links">
-                            <a href="#projects" class="btn btn-primary">
-                                <i class="fas fa-folder-open"></i> View Related Projects
-                            </a>
-                            <a href="#contact" class="btn btn-secondary">
-                                <i class="fas fa-envelope"></i> Get In Touch
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mphasis Position -->
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <div class="experience-title-section">
-                            <h3>Machine Learning Engineer</h3>
-                            <h4>Mphasis</h4>
-                            <div class="experience-meta">
-                                <span class="experience-location">
-                                    <i class="fas fa-map-marker-alt"></i> India
-                                </span>
-                                <span class="experience-duration">
-                                    <i class="fas fa-calendar-alt"></i> July 2022 – Dec 2024
-                                </span>
-                            </div>
-                        </div>
-                        <div class="experience-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="experience-content">
-                        <div class="experience-description">
-                            <p>
-                                <strong>Role:</strong> Developed and implemented machine learning models to automate data-driven decision processes for enterprise clients, improving operational efficiency and reducing manual analysis efforts.
-                            </p>
-                        </div>
-                        
-                        <div class="experience-achievements">
-                            <h5><i class="fas fa-trophy"></i> Key Achievements & Responsibilities:</h5>
-                            <ul>
-                                <li>Developed and implemented ML models using <strong>Python, SQL, and Scikit-learn</strong> to automate data-driven decision processes, improving operational efficiency by <strong>24%</strong> and reducing manual analysis efforts</li>
-                                <li>Built and maintained data preprocessing and feature engineering pipelines for large datasets, applying statistical analysis and data quality checks that improved training dataset reliability and model performance consistency</li>
-                                <li>Designed predictive analytics solutions for classification and regression problems, leveraging ensemble methods and optimization techniques to improve prediction accuracy by <strong>21%</strong> across multiple client applications</li>
-                                <li>Worked extensively with <strong>NLP techniques</strong> including text preprocessing, vectorization, and sentiment analysis to build models that extracted insights from unstructured data, improving information retrieval accuracy by <strong>26%</strong></li>
-                                <li>Utilized <strong>Apache Spark</strong> and distributed computing frameworks to process high-volume datasets efficiently, reducing batch processing time by <strong>40%</strong> and enabling faster experimentation cycles</li>
-                                <li>Supported model deployment activities by containerizing ML applications using <strong>Docker</strong> and assisting in CI/CD pipeline setup, ensuring smooth transitions from development to production environments</li>
-                                <li>Collaborated with QA, data engineering, and business teams to validate model outputs through structured testing and performance benchmarking, achieving a <strong>97% user acceptance rate</strong> during deployment phases</li>
-                                <li>Actively participated in <strong>Agile development processes</strong> including sprint planning, daily stand-ups, and retrospectives, contributing to on-time project delivery and continuous improvement of ML workflows</li>
-                                <li>Created technical documentation and user guides explaining model logic, assumptions, and limitations, improving transparency and enabling business users to confidently adopt AI-driven solutions</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="experience-tech">
-                            <h5><i class="fas fa-code"></i> Technologies Used:</h5>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">SQL</span>
-                                <span class="tech-tag">Scikit-learn</span>
-                                <span class="tech-tag">Apache Spark</span>
-                                <span class="tech-tag">NLP</span>
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">CI/CD</span>
-                                <span class="tech-tag">Agile/Scrum</span>
-                                <span class="tech-tag">Feature Engineering</span>
-                                <span class="tech-tag">Ensemble Methods</span>
-                            </div>
-                        </div>
-                        
-                        <div class="experience-links">
-                            <a href="#projects" class="btn btn-primary">
-                                <i class="fas fa-folder-open"></i> View Projects
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="title-underline"></div>
-                <p class="section-description">Technologies and tools I work with</p>
-            </div>
-            <div class="skills-grid">
-                <!-- Programming & Scripting -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming & Scripting</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fab fa-python"></i>
-                                <span class="skill-name">Python</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-database"></i>
-                                <span class="skill-name">SQL</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-fire"></i>
-                                <span class="skill-name">PySpark</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-terminal"></i>
-                                <span class="skill-name">Shell Scripting</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Machine Learning -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> Machine Learning</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-flask"></i>
-                                <span class="skill-name">Scikit-learn</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-tree"></i>
-                                <span class="skill-name">XGBoost & LightGBM</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-project-diagram"></i>
-                                <span class="skill-name">Feature Engineering</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-chart-line"></i>
-                                <span class="skill-name">Model Evaluation</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-sliders-h"></i>
-                                <span class="skill-name">Hyperparameter Tuning</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Deep Learning -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-robot"></i> Deep Learning</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-brain"></i>
-                                <span class="skill-name">TensorFlow</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-fire-alt"></i>
-                                <span class="skill-name">PyTorch</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-network-wired"></i>
-                                <span class="skill-name">CNN</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-wave-square"></i>
-                                <span class="skill-name">RNN / LSTM</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-exchange-alt"></i>
-                                <span class="skill-name">Transformers</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Generative AI (NEW CATEGORY) -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-magic"></i> Generative AI</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-link"></i>
-                                <span class="skill-name">LangChain & LangGraph</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-database"></i>
-                                <span class="skill-name">RAG & Vector DBs (FAISS, Pinecone)</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-robot"></i>
-                                <span class="skill-name">OpenAI API & HuggingFace</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-sliders-h"></i>
-                                <span class="skill-name">LLM Fine-Tuning</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-check-double"></i>
-                                <span class="skill-name">LLM Evaluation & Prompt Engineering</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Natural Language Processing -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-language"></i> Natural Language Processing</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-file-alt"></i>
-                                <span class="skill-name">Text Classification</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-cut"></i>
-                                <span class="skill-name">Tokenization</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-tag"></i>
-                                <span class="skill-name">NER</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-smile"></i>
-                                <span class="skill-name">Sentiment Analysis</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-language"></i>
-                                <span class="skill-name">Sentence Transformers</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-vector-square"></i>
-                                <span class="skill-name">Embeddings</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Data Engineering -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Data Engineering</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-stream"></i>
-                                <span class="skill-name">Data Pipelines</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-exchange-alt"></i>
-                                <span class="skill-name">ETL Pipelines</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-server"></i>
-                                <span class="skill-name">PostgreSQL & Snowflake</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-table"></i>
-                                <span class="skill-name">Pandas & NumPy</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-broom"></i>
-                                <span class="skill-name">Data Cleaning</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-check-double"></i>
-                                <span class="skill-name">NoSQL (MongoDB)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Big Data & Frameworks -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Big Data & Frameworks</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-fire"></i>
-                                <span class="skill-name">Apache Spark</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-elephant"></i>
-                                <span class="skill-name">Hadoop Ecosystem</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-network-wired"></i>
-                                <span class="skill-name">Distributed Computing</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cloud Platforms -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fab fa-aws"></i>
-                                <span class="skill-name">AWS (S3, EC2, SageMaker)</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fab fa-microsoft"></i>
-                                <span class="skill-name">Azure ML</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-cloud-upload-alt"></i>
-                                <span class="skill-name">GCP (Vertex AI)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- MLOps & Deployment -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-cogs"></i> MLOps & Deployment</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fab fa-docker"></i>
-                                <span class="skill-name">Docker</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-dharmachakra"></i>
-                                <span class="skill-name">Kubernetes</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-sync-alt"></i>
-                                <span class="skill-name">CI/CD Pipelines</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-code-branch"></i>
-                                <span class="skill-name">Model Versioning</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-chart-line"></i>
-                                <span class="skill-name">MLflow</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-chart-area"></i>
-                                <span class="skill-name">Model Monitoring & Drift</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Visualization & Reporting -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-chart-bar"></i> Visualization & Reporting</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-chart-pie"></i>
-                                <span class="skill-name">Power BI</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-chart-bar"></i>
-                                <span class="skill-name">Tableau</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-tv"></i>
-                                <span class="skill-name">Performance Dashboards</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tools & Collaboration -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Collaboration</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fab fa-git-alt"></i>
-                                <span class="skill-name">Git</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fab fa-jira"></i>
-                                <span class="skill-name">Jira</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fab fa-confluence"></i>
-                                <span class="skill-name">Confluence</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fab fa-github"></i>
-                                <span class="skill-name">GitHub Actions</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-badge">
-                                <i class="fas fa-book-open"></i>
-                                <span class="skill-name">Jupyter</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="title-underline"></div>
-                <p class="section-description">ML systems, NLP solutions, analytics dashboards, and data-driven research</p>
-            </div>
-
-            <!-- Project Filters -->
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="ml">Machine Learning</button>
-                <button class="filter-btn" data-filter="analysis">Data Analysis</button>
-                <button class="filter-btn" data-filter="visualization">Visualization</button>
-                <button class="filter-btn" data-filter="nlp">NLP</button>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Project 1: Fake Job Postings Classifier - NEW FEATURED PROJECT -->
-                <div class="project-card featured-dashboard" data-category="nlp ml">
-                    <div class="project-image dashboard-preview">
-                        <i class="fas fa-shield-alt"></i>
-                        <div class="dashboard-badge">
-                            <i class="fas fa-star"></i> Featured NLP Project
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>JobGuard AI — Fake Job Posting Detector</h3>
-                        <p><strong>2025 | NLP · Fraud Detection</strong></p>
-                        <p>Built a public ML app for fraudulent job posting detection using TF-IDF, behavioral signals, SMOTE, and Random Forest on 17,880+ records. Achieved 98.4% accuracy and 0.988 ROC-AUC, with live inference support for single and batch predictions.</p>
-                        
-                        <div class="dashboard-metrics">
-                            <div class="metric-item">
-                                <i class="fas fa-bullseye"></i>
-                                <span class="metric-value">98.4%</span>
-                                <span class="metric-label">Accuracy</span>
-                            </div>
-                            <div class="metric-item">
-                                <i class="fas fa-chart-line"></i>
-                                <span class="metric-value">0.988</span>
-                                <span class="metric-label">ROC-AUC</span>
-                            </div>
-                            <div class="metric-item">
-                                <i class="fas fa-database"></i>
-                                <span class="metric-value">18K+</span>
-                                <span class="metric-label">Job Postings</span>
-                            </div>
-                        </div>
-
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">NLP</span>
-                            <span class="tag">scikit-learn</span>
-                            <span class="tag">XGBoost</span>
-                            <span class="tag">TF-IDF</span>
-                            <span class="tag">SMOTE</span>
-                            <span class="tag">NLTK</span>
-                            <span class="tag">Imbalanced Learning</span>
-                            <span class="tag">Random Forest</span>
-                            <span class="tag">Fraud Detection</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Santhakumarramesh/jobguard-ai" target="_blank" rel="noopener noreferrer" class="project-link" title="View code on GitHub">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                            <a href="https://huggingface.co/spaces" target="_blank" rel="noopener noreferrer" class="project-link" title="Deploy on Hugging Face Spaces">
-                                <i class="fas fa-rocket"></i> Deploy on HF Spaces
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: RAG Document Q&A — GenAI -->
-                <div class="project-card project-landscape" data-category="ml nlp">
-                    <div class="project-image">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>CareCopilot AI — Healthcare RAG Assistant</h3>
-                        <p><strong>2025 | GenAI · RAG</strong></p>
-                        <p>Multi-agent RAG pipeline using LangChain, LangGraph, FAISS, and Pinecone for semantic search across enterprise documents. FastAPI backend with Docker deployment.</p>
-                        <div class="project-tags">
-                            <span class="tag">LangChain</span>
-                            <span class="tag">LangGraph</span>
-                            <span class="tag">RAG</span>
-                            <span class="tag">GenAI</span>
-                            <span class="tag">Pinecone</span>
-                            <span class="tag">FastAPI</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Santhakumarramesh?tab=repositories" target="_blank" rel="noopener noreferrer" class="project-link" title="Add repo when created">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: Motor Balance Analysis - Welding Exposure vs Parkinson's -->
-                <div class="project-card project-landscape" data-category="ml analysis">
-                    <div class="project-image">
-                        <i class="fas fa-balance-scale"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Motor Balance Analysis — Preliminary Welding Exposure Staging System</h3>
-                        <p><strong>University at Buffalo | 2025 | Clinical ML</strong></p>
-                        <p>Quantitative staging system (W1–W5) for occupational welding exposure modeled after Hoehn &amp; Yahr scale. Python, Scikit-learn, XGBoost. 96.7% fall risk accuracy on 30 patients with 48 engineered features.</p>
-                        
-                        <div class="dashboard-metrics">
-                            <div class="metric-item">
-                                <i class="fas fa-bullseye"></i>
-                                <span class="metric-value">96.7%</span>
-                                <span class="metric-label">Fall Risk Accuracy</span>
-                            </div>
-                            <div class="metric-item">
-                                <i class="fas fa-users"></i>
-                                <span class="metric-value">30</span>
-                                <span class="metric-label">Patients</span>
-                            </div>
-                            <div class="metric-item">
-                                <i class="fas fa-cogs"></i>
-                                <span class="metric-value">48</span>
-                                <span class="metric-label">Features</span>
-                            </div>
-                        </div>
-
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Scikit-learn</span>
-                            <span class="tag">XGBoost</span>
-                            <span class="tag">Clinical Data Science</span>
-                            <span class="tag">Feature Engineering</span>
-                            <span class="tag">LOOCV</span>
-                            <span class="tag">Multi-class Classification</span>
-                            <span class="tag">Occupational Health</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Santhakumarramesh/motor-balance-welding-analysis" target="_blank" rel="noopener noreferrer" class="project-link" title="View code on GitHub">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: Occupational Heavy Metal Exposure Research -->
-                <div class="project-card project-landscape" data-category="ml analysis">
-                    <div class="project-image">
-                        <i class="fas fa-microscope"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Occupational Heavy Metal Exposure &amp; Fall Risk Analysis</h3>
-                        <p><strong>University at Buffalo, SPHHP | 2025 | Public Health ML</strong></p>
-                        <p>Survey-weighted ML on NHANES data for fall risk prediction. Python, XGBoost. 87% accuracy with population-level inference. Manuscript pending.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">XGBoost</span>
-                            <span class="tag">Public Health</span>
-                            <span class="tag">Research</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Santhakumarramesh/occupational-exposure-NHANES" target="_blank" rel="noopener noreferrer" class="project-link" title="View code on GitHub">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5: Hospital Operations Analytics - Data Analytics / BI (not ML) -->
-                <div class="project-card featured-dashboard" data-category="analysis visualization">
-                    <div class="project-image dashboard-preview">
-                        <i class="fas fa-hospital"></i>
-                        <div class="dashboard-badge">
-                            <i class="fas fa-chart-bar"></i> Data Analytics & BI
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Hospital Operations Analytics</h3>
-                        <p><strong>University at Buffalo | 2025 | Data Analytics &amp; BI</strong></p>
-                        <p>5 interconnected Tableau dashboards with SQLite-based ETL pipeline. Healthcare analytics for revenue, doctor activity, patient frequency, and trends. 50K+ records, 15+ KPIs.</p>
-                        
-                        <div class="dashboard-metrics">
-                            <div class="metric-item">
-                                <i class="fas fa-clock"></i>
-                                <span class="metric-value">30%</span>
-                                <span class="metric-label">Time Saved</span>
-                            </div>
-                            <div class="metric-item">
-                                <i class="fas fa-database"></i>
-                                <span class="metric-value">50K+</span>
-                                <span class="metric-label">Records Analyzed</span>
-                            </div>
-                            <div class="metric-item">
-                                <i class="fas fa-chart-bar"></i>
-                                <span class="metric-value">15+</span>
-                                <span class="metric-label">KPIs Tracked</span>
-                            </div>
-                        </div>
-
-                        <!-- Tableau Dashboard Embed -->
-                        <div class="dashboard-embed-section">
-                            <h4><i class="fas fa-chart-area"></i> Live Interactive Dashboards</h4>
-                            
-                            <!-- Dashboard Tabs -->
-                            <div class="dashboard-tabs">
-                                <button class="dashboard-tab active" data-dashboard="dashboard1">
-                                    <i class="fas fa-chart-pie"></i> Overview
-                                </button>
-                                <button class="dashboard-tab" data-dashboard="dashboard2">
-                                    <i class="fas fa-dollar-sign"></i> Revenue
-                                </button>
-                                <button class="dashboard-tab" data-dashboard="dashboard3">
-                                    <i class="fas fa-user-md"></i> Doctor Activity
-                                </button>
-                                <button class="dashboard-tab" data-dashboard="dashboard4">
-                                    <i class="fas fa-procedures"></i> Patient Frequency
-                                </button>
-                                <button class="dashboard-tab" data-dashboard="dashboard5">
-                                    <i class="fas fa-chart-line"></i> Revenue Trends
-                                </button>
-                            </div>
-
-                            <!-- Dashboard 1: Overview -->
-                            <div class="dashboard-container active" id="dashboard1">
-                                <div class='tableauPlaceholder' id='viz1763087712706' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HospitalVisitAnalyticsDashboard&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HospitalVisitAnalyticsDashboard&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HospitalVisitAnalyticsDashboard&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
-                                <script type='text/javascript'>
-                                    var divElement = document.getElementById('viz1763087712706');
-                                    var vizElement = divElement.getElementsByTagName('object')[0];
-                                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1677px';}
-                                    var scriptElement = document.createElement('script');
-                                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                                </script>
-                            </div>
-
-                            <!-- Dashboard 2: Revenue -->
-                            <div class="dashboard-container" id="dashboard2" style="display: none;">
-                                <div class='tableauPlaceholder' id='viz1763087729688' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HospitalVisitAnalyticsDashboard-revenue&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HospitalVisitAnalyticsDashboard-revenue&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HospitalVisitAnalyticsDashboard-revenue&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
-                                <script type='text/javascript'>
-                                    var divElement = document.getElementById('viz1763087729688');
-                                    var vizElement = divElement.getElementsByTagName('object')[0];
-                                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}
-                                    var scriptElement = document.createElement('script');
-                                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                                </script>
-                            </div>
-
-                            <!-- Dashboard 3: Doctor Activity -->
-                            <div class="dashboard-container" id="dashboard3" style="display: none;">
-                                <div class='tableauPlaceholder' id='viz1763087745494' style='position: relative'><noscript><a href='#'><img alt='Dashboard 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HospitalVisitAnalyticsDashboard-doctoractivity&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HospitalVisitAnalyticsDashboard-doctoractivity&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HospitalVisitAnalyticsDashboard-doctoractivity&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
-                                <script type='text/javascript'>
-                                    var divElement = document.getElementById('viz1763087745494');
-                                    var vizElement = divElement.getElementsByTagName('object')[0];
-                                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1127px';}
-                                    var scriptElement = document.createElement('script');
-                                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                                </script>
-                            </div>
-
-                            <!-- Dashboard 4: Patient Frequency -->
-                            <div class="dashboard-container" id="dashboard4" style="display: none;">
-                                <div class='tableauPlaceholder' id='viz1763087759930' style='position: relative'><noscript><a href='#'><img alt='Dashboard 4 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HospitalVisitAnalyticsDashboardpatientfreq&#47;Dashboard4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HospitalVisitAnalyticsDashboardpatientfreq&#47;Dashboard4' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HospitalVisitAnalyticsDashboardpatientfreq&#47;Dashboard4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
-                                <script type='text/javascript'>
-                                    var divElement = document.getElementById('viz1763087759930');
-                                    var vizElement = divElement.getElementsByTagName('object')[0];
-                                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1127px';}
-                                    var scriptElement = document.createElement('script');
-                                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                                </script>
-                            </div>
-
-                            <!-- Dashboard 5: Revenue Trends -->
-                            <div class="dashboard-container" id="dashboard5" style="display: none;">
-                                <div class='tableauPlaceholder' id='viz1763087771973' style='position: relative'><noscript><a href='#'><img alt='Dashboard 5 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HospitalVisitAnalyticsDashboardmonthlyrevtrend&#47;Dashboard5&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HospitalVisitAnalyticsDashboardmonthlyrevtrend&#47;Dashboard5' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HospitalVisitAnalyticsDashboardmonthlyrevtrend&#47;Dashboard5&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
-                                <script type='text/javascript'>
-                                    var divElement = document.getElementById('viz1763087771973');
-                                    var vizElement = divElement.getElementsByTagName('object')[0];
-                                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1427px';}
-                                    var scriptElement = document.createElement('script');
-                                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                                </script>
-                            </div>
-
-                            <p class="dashboard-note">
-                                <i class="fas fa-info-circle"></i> 
-                                <strong>Dashboard Highlights:</strong> Explore comprehensive hospital analytics including patient admission patterns, physician productivity analysis, revenue trends by department, patient frequency metrics, and monthly revenue forecasting. Click the tabs above to switch between different views.
-                            </p>
-                        </div>
-
-                        <div class="project-tags">
-                            <span class="tag">Tableau</span>
-                            <span class="tag">Power BI</span>
-                            <span class="tag">SQL (SQLite)</span>
-                            <span class="tag">ETL Automation</span>
-                            <span class="tag">Healthcare Analytics</span>
-                            <span class="tag">KPI Design</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Santhakumarramesh/Hospital-Visit-Analysis" target="_blank" rel="noopener noreferrer" class="project-link" title="View code on GitHub">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                            <a href="#projects" class="project-link" title="Live dashboards above">
-                                <i class="fas fa-chart-line"></i> Live Dashboards
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Education & Certifications</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Jan 2025 - Dec 2025</div>
-                        <h3>Master's in Data Science & Applications</h3>
-                        <h4>Graduated: December 2025 | GPA: 3.097</h4>
-                        <p>University at Buffalo, New York, USA</p>
-                        <ul>
-                            <li>Statistical Data Mining I & II</li>
-                            <li>Deep Learning</li>
-                            <li>Data Models & Query Language</li>
-                            <li>Data Intensive Computing</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Oct 2020 - May 2024</div>
-                        <h3>B.E., Electronics & Communication Engineering</h3>
-                        <h4>CGPA: 7.83</h4>
-                        <p>Rajalakshmi Engineering College, Chennai</p>
-                        <ul>
-                            <li>Data Structures & Algorithms</li>
-                            <li>Digital Signal Processing</li>
-                            <li>Digital Electronics & Microprocessors</li>
-                            <li>Embedded Systems & Microcontrollers</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2023 - 2025</div>
-                        <h3>Professional Certifications</h3>
-                        <h4>Data Science & Analytics</h4>
-                        <ul>
-                            <li>Google Data Analytics Professional Certificate - Coursera (2024)</li>
-                            <li>IBM Data Science Specialization - Coursera (2024)</li>
-                            <li>SQL for Data Analysis and Business Intelligence - Udemy (2024)</li>
-                            <li>Tableau Desktop for Data Visualization - LinkedIn Learning (2025)</li>
-                            <li>Python for Data Science & Machine Learning Bootcamp - Udemy (2023)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="title-underline"></div>
-                <p class="section-description">Let's discuss your next AI/ML project</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>santhakumar0527@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+1 716-328-4155</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Buffalo, NY, USA</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-university"></i>
-                            <div>
-                                <h4>University</h4>
-                                <p>University at Buffalo</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="social-contact">
-                        <a href="https://github.com/Santhakumarramesh" target="_blank" rel="noopener noreferrer" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/santhakumar-ramesh/" target="_blank" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:santhakumar0527@gmail.com" title="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://github.com/Santhakumarramesh?tab=repositories" target="_blank" rel="noopener noreferrer" title="My Repositories">
-                            <i class="fas fa-code-branch"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm" action="https://formspree.io/f/mnnokozo" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                        <div id="form-status" style="margin-top: 1rem; display: none;"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Santhakumar Ramesh</h3>
-                    <p>AI/ML Engineer | DXC Technology</p>
-                    <p>Building intelligent systems that drive business impact</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="https://github.com/Santhakumarramesh?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub Projects</a></li>
-                        <li><a href="https://www.linkedin.com/in/santhakumar-ramesh/" target="_blank">LinkedIn</a></li>
-                        <li><a href="Santhakumar_Ramesh_Resume_AIMLEngineer.pdf" download>Resume</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Santhakumar. All rights reserved.</p>
-                <p>Built with passion and technical expertise</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button -->
-    <button id="scrollTop" class="scroll-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
+<a class="inline-block bg-surface-container-highest text-on-surface border border-outline-variant/20 font-bold px-8 py-4 rounded-xl hover:bg-surface-bright transition-colors" href="Santhakumar_Ramesh_Resume_AIMLEngineer.pdf" download>Download Full Resume</a>
+</div>
+</div>
+<!-- Background decoration -->
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-primary/5 blur-[80px] rounded-full"></div>
+<div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 bg-secondary/5 blur-[80px] rounded-full"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 border-t border-white/5 py-12 px-6">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto font-['Inter'] text-sm tracking-wide">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-['Space_Grotesk'] font-bold text-slate-200 text-lg">Santhakumar Ramesh</span>
+<p class="text-slate-500">© 2025 Santhakumar Ramesh.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-blue-300 hover:underline decoration-blue-500/50 underline-offset-4 transition-all duration-300" href="https://github.com/Santhakumarramesh" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a class="text-slate-500 hover:text-blue-300 hover:underline decoration-blue-500/50 underline-offset-4 transition-all duration-300" href="https://www.linkedin.com/in/santhakumar-ramesh" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a class="text-slate-500 hover:text-blue-300 hover:underline decoration-blue-500/50 underline-offset-4 transition-all duration-300" href="mailto:santhakumar0527@gmail.com">Email</a>
+</div>
+</div>
+</footer>
+</body></html>
