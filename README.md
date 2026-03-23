@@ -32,12 +32,13 @@ Personal portfolio for **Santhakumar Ramesh** — AI/ML Engineer (NLP, RAG, prod
 
 ```
 ├── index.html              # Entire site (Tailwind CDN, self-contained)
+├── profile.png             # Hero portrait + Open Graph preview image
 ├── Santhakumar_Ramesh_Resume_AIMLEngineer.pdf
 ├── .nojekyll               # GitHub Pages: serve static files as-is
 └── README.md
 ```
 
-**Optional (not committed yet):** Add `preview.png` or `og-image.png` at repo root for social previews, then add `<meta property="og:image" content="https://santhakumarramesh.github.io/og-image.png">` in `index.html`.
+**Social preview:** `og:image` points at `profile.png` on Pages. To use a wider dedicated card (e.g. 1200×630), add `og-image.png` and update the meta URL in `index.html`.
 
 ---
 
