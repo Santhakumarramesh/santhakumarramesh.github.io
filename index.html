@@ -3,7 +3,7 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta name="portfolio-revision" content="2026-03-footer"/>
+<meta name="portfolio-revision" content="2026-03-v2-single-exp-blocks"/>
 <title>Santhakumar Ramesh | AI/ML Engineer Portfolio</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
@@ -99,7 +99,7 @@
     }
   </style>
 </head>
-<body class="selection:bg-primary-container selection:text-on-primary-container">
+<body class="selection:bg-primary-container selection:text-on-primary-container" data-site-year="2026">
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-xl border-b border-white/10 shadow-2xl shadow-blue-500/10">
 <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
@@ -306,65 +306,50 @@ Built with an engineering mindset
 </div>
 </div>
 </section>
-<!-- Experience Timeline -->
+<!-- Experience: one block per role (no split-column duplicate headings) -->
 <section class="bg-surface-container-low py-24" id="experience">
 <div class="max-w-7xl mx-auto px-6">
-<h2 class="text-3xl font-headline font-bold mb-16">Professional Trajectory</h2>
-<div class="relative space-y-16 after:content-[''] after:absolute after:left-4 md:after:left-1/2 after:top-0 after:bottom-0 after:w-px after:bg-outline-variant/20">
+<h2 class="text-3xl font-headline font-bold mb-12">Professional Trajectory</h2>
+<div class="max-w-3xl space-y-10">
 <!-- DXC -->
-<div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center group">
-<div class="w-full md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0 order-1 md:order-none">
-<h3 class="text-xl font-bold" id="exp-dxc">DXC Technology</h3>
-<p class="text-primary font-medium">AI / Machine Learning Engineer Intern</p>
-<p class="text-sm text-on-surface-variant mt-2">USA | Jan 2026 – Present</p>
-</div>
-<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-highest border-4 border-background z-10 flex items-center justify-center group-hover:border-primary transition-colors">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
-</div>
-<div class="w-full md:w-1/2 pl-12 order-2 md:order-none">
-<ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4" aria-labelledby="exp-dxc">
+<article class="rounded-xl border border-outline-variant/20 bg-surface-container/40 p-6 md:p-8">
+<header class="mb-4 pb-4 border-b border-outline-variant/15">
+<h3 class="text-xl font-bold text-on-surface" id="exp-dxc">DXC Technology</h3>
+<p class="text-primary font-medium mt-1">AI / Machine Learning Engineer Intern</p>
+<p class="text-sm text-on-surface-variant mt-2">USA · Jan 2026 – Present</p>
+</header>
+<ul class="space-y-2.5 text-on-surface-variant text-sm list-disc list-outside pl-5">
 <li>Design and evaluate ML solutions for forecasting and analytics (Python, Scikit-learn, TensorFlow, PyTorch).</li>
 <li>Build SQL and PySpark pipelines for batch and near real-time inference.</li>
 <li>Develop CNN and LSTM models for pattern recognition and time-series forecasting.</li>
 <li>Support deployment with Docker, Kubernetes, AWS, and Azure; build dashboards for validation and visibility.</li>
 </ul>
-</div>
-</div>
+</article>
 <!-- Mphasis -->
-<div class="relative flex flex-col md:flex-row-reverse md:justify-between items-start md:items-center group">
-<div class="w-full md:w-1/2 md:pl-12 text-left mb-4 md:mb-0 order-1 md:order-none">
-<h3 class="text-xl font-bold" id="exp-mphasis">Mphasis</h3>
-<p class="text-secondary font-medium">Machine Learning Engineer</p>
-<p class="text-sm text-on-surface-variant mt-2">India | Intern: Aug–Dec 2023 • Full-time: Jan 2024–Dec 2024</p>
-</div>
-<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-highest border-4 border-background z-10 flex items-center justify-center group-hover:border-secondary transition-colors">
-<span class="w-2 h-2 rounded-full bg-secondary"></span>
-</div>
-<div class="w-full md:w-1/2 pr-12 text-left md:text-right order-2 md:order-none">
-<ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4 md:pl-0 md:list-none" aria-labelledby="exp-mphasis">
+<article class="rounded-xl border border-outline-variant/20 bg-surface-container/40 p-6 md:p-8">
+<header class="mb-4 pb-4 border-b border-outline-variant/15">
+<h3 class="text-xl font-bold text-on-surface" id="exp-mphasis">Mphasis</h3>
+<p class="text-secondary font-medium mt-1">Machine Learning Engineer</p>
+<p class="text-sm text-on-surface-variant mt-2">India · Intern Aug–Dec 2023 · Full-time Jan 2024–Dec 2024</p>
+</header>
+<ul class="space-y-2.5 text-on-surface-variant text-sm list-disc list-outside pl-5">
 <li>Developed ML models in Python and Scikit-learn for classification and regression; built preprocessing and feature engineering pipelines.</li>
 <li>Applied NLP: text preprocessing, TF-IDF, sentiment analysis.</li>
 <li>Processed high-volume data with Apache Spark; deployed models with Docker and CI/CD.</li>
 </ul>
-</div>
-</div>
+</article>
 <!-- UB -->
-<div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center group">
-<div class="w-full md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0 order-1 md:order-none">
-<h3 class="text-xl font-bold" id="exp-ub">University at Buffalo</h3>
-<p class="text-primary font-medium">MS in Data Science &amp; Applications</p>
-<p class="text-sm text-on-surface-variant mt-2">Jan 2025 – Dec 2025 | Graduated</p>
-</div>
-<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-highest border-4 border-background z-10 flex items-center justify-center group-hover:border-primary transition-colors">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
-</div>
-<div class="w-full md:w-1/2 pl-12 order-2 md:order-none">
-<ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4" aria-labelledby="exp-ub">
+<article class="rounded-xl border border-outline-variant/20 bg-surface-container/40 p-6 md:p-8">
+<header class="mb-4 pb-4 border-b border-outline-variant/15">
+<h3 class="text-xl font-bold text-on-surface" id="exp-ub">University at Buffalo</h3>
+<p class="text-primary font-medium mt-1">MS in Data Science &amp; Applications</p>
+<p class="text-sm text-on-surface-variant mt-2">Jan 2025 – Dec 2025 · Graduated</p>
+</header>
+<ul class="space-y-2.5 text-on-surface-variant text-sm list-disc list-outside pl-5">
 <li>Coursework: Statistical Data Mining I &amp; II, Deep Learning, Data Models &amp; Query Language, Data Intensive Computing.</li>
 <li>GPA: 3.097</li>
 </ul>
-</div>
-</div>
+</article>
 </div>
 </div>
 </section>
@@ -593,9 +578,9 @@ Built with an engineering mindset
 <div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto font-['Inter'] text-sm tracking-wide">
 <div class="flex flex-col items-center md:items-start gap-2">
 <span class="font-['Space_Grotesk'] font-bold text-slate-200 text-lg">Santhakumar Ramesh</span>
-<div class="text-slate-500 text-center md:text-left">
-<p class="font-medium text-slate-400">© 2026 Santhakumar Ramesh</p>
-<p class="text-xs mt-1 text-slate-600">Last updated March 2026</p>
+<div class="text-slate-500 text-center md:text-left" id="site-footer-copy">
+<p class="font-semibold text-slate-300 tracking-wide">© <time datetime="2026">2026</time> Santhakumar Ramesh</p>
+<p class="text-xs mt-1.5 text-slate-500">Portfolio · March 2026</p>
 </div>
 </div>
 <div class="flex gap-8">
