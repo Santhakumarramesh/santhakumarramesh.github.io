@@ -6,6 +6,10 @@ Personal portfolio for **Santhakumar Ramesh** — AI/ML Engineer (NLP, RAG, prod
 
 ---
 
+## Stitch / design exports
+
+New Stitch zips (e.g. `stitch_portfolio_dashboard_home-5.zip`) should be processed with **`scripts/import-stitch-bundle.sh`** for local diffing only. Summaries and guides live under **`imports/stitch_portfolio_dashboard_home-5/`**. Raw `code.html` from Stitch is **not** auto-deployed — merge intentionally into root **`index.html`** (see that folder’s README for why).
+
 ## Canonical source (avoid repo vs live drift)
 
 - **Single source of truth:** `index.html` on **`main`**, at repo root.  
@@ -91,6 +95,7 @@ No build step.
 
 - **2026-03** — Recruiter blueprint: hero + proof cards, Selected Impact, Why me, CareCopilot before JobGuard, System design labeling, Engineering depth on all six projects, single experience blocks, footer © 2026, meta revision tag for deploy traceability.
 - **2026-03 (micro-polish)** — Skill blurbs tightened (NLP, RAG, cloud, ML, MLOps, data eng); project CTAs: `Live` + “Hosted app”, `GitHub` + “Source” (no redundant “Demo” line).
+- **2026-03 (Stitch zip)** — Archived `stitch_portfolio_dashboard_home-5` docs under `imports/` + `scripts/import-stitch-bundle.sh`; production `index.html` unchanged (bundle `code.html` had placeholders / regressions).
 - **2026-03 (mobile + checklist)** — Narrow-screen hero/header/footer padding, stacked full-width hero + contact CTAs and project buttons (≥44px tap targets), duplicate Material Symbols link removed; contact headline tightened; Motor Balance copy (“small‑n validation”); `portfolio-revision` bump.
 
 ---
