@@ -91,6 +91,26 @@ No build step.
 
 - **2026-03** — Recruiter blueprint: hero + proof cards, Selected Impact, Why me, CareCopilot before JobGuard, System design labeling, Engineering depth on all six projects, single experience blocks, footer © 2026, meta revision tag for deploy traceability.
 - **2026-03 (micro-polish)** — Skill blurbs tightened (NLP, RAG, cloud, ML, MLOps, data eng); project CTAs: `Live` + “Hosted app”, `GitHub` + “Source” (no redundant “Demo” line).
+- **2026-03 (mobile + checklist)** — Narrow-screen hero/header/footer padding, stacked full-width hero + contact CTAs and project buttons (≥44px tap targets), duplicate Material Symbols link removed; contact headline tightened; Motor Balance copy (“small‑n validation”); `portfolio-revision` bump.
+
+---
+
+## Final checklist (before calling it done)
+
+Use this on every release (especially before heavy recruiting):
+
+1. **Hero** — Headline is specific; no over-claims.
+2. **Subhead** — Stack line matches roles you’re actually targeting.
+3. **Projects** — Top two cards are the ones you want interviewers to open first (here: CareCopilot, JobGuard).
+4. **Proof per card** — Problem, system design, result, stack, Live / GitHub; depth in `<details>` for interviews.
+5. **Experience** — Bullets are yours to defend; dates match PDF + LinkedIn.
+6. **Skills** — Concrete capabilities, not vague buzzwords (re-audit if you add cards).
+7. **Resume** — Header + contact CTA download `Santhakumar_Ramesh_Resume_AIMLEngineer.pdf` (correct file on `main`).
+8. **Links** — GitHub + LinkedIn in footer point to the right profiles.
+9. **Mobile** — Hero, cards, and CTAs feel balanced (stacked buttons, tap targets).
+10. **Deploy** — Live site matches `main` (check `<meta name="portfolio-revision">` in page source after push).
+
+**Premium layer still optional:** `og-image.png` (e.g. 1200×630) + `og:image` meta; polished headshot replacing `profile.png` when ready.
 
 ---
 
