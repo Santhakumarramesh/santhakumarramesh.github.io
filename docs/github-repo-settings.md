@@ -1,6 +1,6 @@
-# GitHub Repo Setup
+# GitHub repository settings (maintainer)
 
-Set these in your repo **Settings** for better discoverability:
+Optional **Settings → General** fields for discoverability:
 
 ## Description
 ```
@@ -13,7 +13,6 @@ https://santhakumarramesh.github.io
 ```
 
 ## Topics
-Add these topics:
 ```
 portfolio
 github-pages

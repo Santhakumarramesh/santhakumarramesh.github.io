@@ -21,9 +21,10 @@ The `code.html` files inside the original zip are **design exports**, not the li
 
 | File | Purpose |
 |------|--------|
-| `STITCH_BUNDLE_README.md` | Copy of the zip’s root readme |
 | `recruiter_shortlist_optimization_guide.html` | Reference notes from the bundle |
 | `SYNAPSE_DARK_DESIGN.md` | Design tokens / notes from `synapse_dark` |
+
+The zip’s generic root `readme.md` was **not** kept — it duplicated the main repo README and listed projects in a non-canonical order.
 
 Screenshots (`screen.png`) and full `code.html` variants were **not** committed (large binaries; use the zip locally if you need them).
 
