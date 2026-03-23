@@ -4,6 +4,11 @@ Personal portfolio for **Santhakumar Ramesh** — AI/ML Engineer (NLP, RAG, prod
 
 **Live site:** [santhakumarramesh.github.io](https://santhakumarramesh.github.io)
 
+## Production source of truth
+
+- **`index.html`** (repo root, branch **`main`**) is the **live portfolio** — what GitHub Pages serves.
+- **Stitch bundles** under **`imports/`** are **reference only**. They are **not** deploy-ready until you **manually merge** chosen changes into **`index.html`** (contact, project order, experience blocks, and copy stay in the production file).
+
 ---
 
 ## Stitch / design exports
@@ -95,6 +100,7 @@ No build step.
 
 - **2026-03** — Recruiter blueprint: hero + proof cards, Selected Impact, Why me, CareCopilot before JobGuard, System design labeling, Engineering depth on all six projects, single experience blocks, footer © 2026, meta revision tag for deploy traceability.
 - **2026-03 (micro-polish)** — Skill blurbs tightened (NLP, RAG, cloud, ML, MLOps, data eng); project CTAs: `Live` + “Hosted app”, `GitHub` + “Source” (no redundant “Demo” line).
+- **2026-03 (docs)** — “Production source of truth” in root README; imports README banner: reference-only, do not deploy directly.
 - **2026-03 (Stitch zip)** — Archived `stitch_portfolio_dashboard_home-5` docs under `imports/` + `scripts/import-stitch-bundle.sh`; production `index.html` unchanged (bundle `code.html` had placeholders / regressions).
 - **2026-03 (mobile + checklist)** — Narrow-screen hero/header/footer padding, stacked full-width hero + contact CTAs and project buttons (≥44px tap targets), duplicate Material Symbols link removed; contact headline tightened; Motor Balance copy (“small‑n validation”); `portfolio-revision` bump.
 

@@ -1,5 +1,7 @@
 # Stitch bundle: `stitch_portfolio_dashboard_home-5`
 
+**Reference only — do not deploy directly.**
+
 **Processed:** 2026-03-23 (from `stitch_portfolio_dashboard_home-5.zip`)
 
 ## Important — production HTML
