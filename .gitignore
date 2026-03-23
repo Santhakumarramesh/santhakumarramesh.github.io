@@ -1,3 +1,13 @@
-# Separate project repos (have their own remotes)
+# macOS / editor
+.DS_Store
+
+# Local design sources (merged into index.html; do not deploy)
+stitch_portfolio_dashboard_home/
+stitch_portfolio_dashboard_home.zip
+
+# Scratch / drafts
+resume_text.txt
+
+# Nested project clones (own remotes)
 jobguard-ai/
 rag-document-qa/
