@@ -3,7 +3,7 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta name="portfolio-revision" content="2026-03-recruiter-blueprint"/>
+<meta name="portfolio-revision" content="2026-03-micro-polish"/>
 <meta property="og:title" content="Santhakumar Ramesh | AI/ML Engineer"/>
 <meta property="og:description" content="NLP, RAG, production ML — demos and repos. Canonical source: this repo main branch index.html."/>
 <!-- og:image omitted until a dedicated headshot / 1200×630 card exists (casual outdoor photo reads weak at link-preview size) -->
@@ -260,7 +260,7 @@
 <div class="bg-surface-container rounded-xl p-6 border border-outline-variant/5 hover:bg-surface-container-high transition-all group">
 <span class="material-symbols-outlined text-primary mb-4 block group-hover:scale-110 transition-transform">analytics</span>
 <h3 class="text-xl font-bold mb-3">Machine Learning</h3>
-<p class="text-sm text-on-surface-variant mb-4">High-performance predictive modeling and experimentation.</p>
+<p class="text-sm text-on-surface-variant mb-4">Supervised learning, validation, and error analysis on tabular and structured data.</p>
 <div class="flex flex-wrap gap-2">
 <span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">Python</span>
 <span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">Scikit-learn</span>
@@ -272,7 +272,7 @@
 <div class="bg-surface-container rounded-xl p-6 border border-outline-variant/5 hover:bg-surface-container-high transition-all group">
 <span class="material-symbols-outlined text-secondary mb-4 block group-hover:scale-110 transition-transform">language</span>
 <h3 class="text-xl font-bold mb-3">NLP</h3>
-<p class="text-sm text-on-surface-variant mb-4">Deep linguistic analysis and transformer-based understanding.</p>
+<p class="text-sm text-on-surface-variant mb-4">Text preprocessing, TF‑IDF / embeddings, classification, and topic models for real datasets.</p>
 <div class="flex flex-wrap gap-2">
 <span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">SpaCy</span>
 <span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">Transformers</span>
@@ -284,7 +284,7 @@
 <div class="bg-surface-container rounded-xl p-6 border border-outline-variant/5 hover:bg-surface-container-high transition-all group">
 <span class="material-symbols-outlined text-primary mb-4 block group-hover:scale-110 transition-transform">psychology</span>
 <h3 class="text-xl font-bold mb-3">Generative AI / RAG</h3>
-<p class="text-sm text-on-surface-variant mb-4">Architecting next-gen conversational agents and knowledge systems.</p>
+<p class="text-sm text-on-surface-variant mb-4">RAG pipelines: retrieval, orchestration (e.g. LangGraph), vector search, and lightweight eval.</p>
 <div class="flex flex-wrap gap-2">
 <span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">LangChain</span>
 <span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">FAISS</span>
@@ -296,7 +296,7 @@
 <div class="bg-surface-container rounded-xl p-6 border border-outline-variant/5 hover:bg-surface-container-high transition-all group">
 <span class="material-symbols-outlined text-secondary mb-4 block group-hover:scale-110 transition-transform">inventory_2</span>
 <h3 class="text-xl font-bold mb-3">MLOps</h3>
-<p class="text-sm text-on-surface-variant mb-4">Containerization and automated lifecycle management.</p>
+<p class="text-sm text-on-surface-variant mb-4">Dockerized services, CI hooks, and tracked experiments for repeatable deploys.</p>
 <div class="flex flex-wrap gap-2">
 <span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">Docker</span>
 <span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">Kubernetes</span>
@@ -308,7 +308,7 @@
 <div class="bg-surface-container rounded-xl p-6 border border-outline-variant/5 hover:bg-surface-container-high transition-all group">
 <span class="material-symbols-outlined text-primary mb-4 block group-hover:scale-110 transition-transform">database</span>
 <h3 class="text-xl font-bold mb-3">Data Engineering</h3>
-<p class="text-sm text-on-surface-variant mb-4">Scalable ETL pipelines and robust data warehousing.</p>
+<p class="text-sm text-on-surface-variant mb-4">SQL, Spark, and ETL with checks so downstream analytics and models see clean inputs.</p>
 <div class="flex flex-wrap gap-2">
 <span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">SQL / NoSQL</span>
 <span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-primary">Spark</span>
@@ -320,7 +320,7 @@
 <div class="bg-surface-container rounded-xl p-6 border border-outline-variant/5 hover:bg-surface-container-high transition-all group">
 <span class="material-symbols-outlined text-secondary mb-4 block group-hover:scale-110 transition-transform">cloud_upload</span>
 <h3 class="text-xl font-bold mb-3">Cloud Deployment</h3>
-<p class="text-sm text-on-surface-variant mb-4">Global infrastructure and serverless API ecosystems.</p>
+<p class="text-sm text-on-surface-variant mb-4">AWS / Azure for containers, APIs, and managed services backing ML apps.</p>
 <div class="flex flex-wrap gap-2">
 <span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">AWS</span>
 <span class="text-[10px] px-2 py-1 rounded-md bg-surface-container-highest text-secondary">Azure</span>
@@ -470,8 +470,8 @@ Built with an engineering mindset
 </details>
 </div>
 <div class="p-6 pt-0 flex gap-4">
-<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://carecopilot-ai-eight.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo<span class="text-[9px] font-normal text-on-surface-variant/70">Demo</span></a>
-<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://github.com/Santhakumarramesh/healthcare-rag-agent" target="_blank" rel="noopener noreferrer">GitHub<span class="text-[9px] font-normal text-on-surface-variant/70">Code</span></a>
+<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://carecopilot-ai-eight.vercel.app" target="_blank" rel="noopener noreferrer">Live<span class="text-[9px] font-normal text-on-surface-variant/70">Hosted app</span></a>
+<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://github.com/Santhakumarramesh/healthcare-rag-agent" target="_blank" rel="noopener noreferrer">GitHub<span class="text-[9px] font-normal text-on-surface-variant/70">Source</span></a>
 </div>
 </div>
 <!-- JobGuard AI - Interview Anchor (position 2) -->
@@ -507,8 +507,8 @@ Built with an engineering mindset
 </details>
 </div>
 <div class="p-6 pt-0 flex gap-4">
-<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://santhakumarramesh.github.io/jobguard-ai/" target="_blank" rel="noopener noreferrer">Live Demo<span class="text-[9px] font-normal text-on-surface-variant/70">Demo</span></a>
-<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://github.com/Santhakumarramesh/jobguard-ai" target="_blank" rel="noopener noreferrer">GitHub<span class="text-[9px] font-normal text-on-surface-variant/70">Code</span></a>
+<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://santhakumarramesh.github.io/jobguard-ai/" target="_blank" rel="noopener noreferrer">Live<span class="text-[9px] font-normal text-on-surface-variant/70">Hosted app</span></a>
+<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://github.com/Santhakumarramesh/jobguard-ai" target="_blank" rel="noopener noreferrer">GitHub<span class="text-[9px] font-normal text-on-surface-variant/70">Source</span></a>
 </div>
 </div>
 <!-- Motor Balance Analysis -->
@@ -543,7 +543,7 @@ Built with an engineering mindset
 </details>
 </div>
 <div class="p-6 pt-0 flex gap-4">
-<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://github.com/Santhakumarramesh/motor-balance-pd-welders" target="_blank" rel="noopener noreferrer">GitHub<span class="text-[9px] font-normal text-on-surface-variant/70">Code</span></a>
+<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://github.com/Santhakumarramesh/motor-balance-pd-welders" target="_blank" rel="noopener noreferrer">GitHub<span class="text-[9px] font-normal text-on-surface-variant/70">Source</span></a>
 </div>
 </div>
 <!-- Occupational Heavy Metal -->
@@ -577,7 +577,7 @@ Built with an engineering mindset
 </details>
 </div>
 <div class="p-6 pt-0 flex gap-4">
-<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://github.com/Santhakumarramesh/occupational-exposure-NHANES" target="_blank" rel="noopener noreferrer">GitHub<span class="text-[9px] font-normal text-on-surface-variant/70">Code</span></a>
+<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://github.com/Santhakumarramesh/occupational-exposure-NHANES" target="_blank" rel="noopener noreferrer">GitHub<span class="text-[9px] font-normal text-on-surface-variant/70">Source</span></a>
 </div>
 </div>
 <!-- Hospital Analytics -->
@@ -611,7 +611,7 @@ Built with an engineering mindset
 </details>
 </div>
 <div class="p-6 pt-0 flex gap-4">
-<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://github.com/Santhakumarramesh/Hospital-Visit-Analysis" target="_blank" rel="noopener noreferrer">GitHub<span class="text-[9px] font-normal text-on-surface-variant/70">Code</span></a>
+<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://github.com/Santhakumarramesh/Hospital-Visit-Analysis" target="_blank" rel="noopener noreferrer">GitHub<span class="text-[9px] font-normal text-on-surface-variant/70">Source</span></a>
 </div>
 </div>
 <!-- Smart Grievance System -->
@@ -645,8 +645,8 @@ Built with an engineering mindset
 </details>
 </div>
 <div class="p-6 pt-0 flex gap-4">
-<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://santhakumarramesh.github.io/smart-grievance-system/docs/" target="_blank" rel="noopener noreferrer">Live Demo<span class="text-[9px] font-normal text-on-surface-variant/70">Demo</span></a>
-<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://github.com/Santhakumarramesh/smart-grievance-system" target="_blank" rel="noopener noreferrer">GitHub<span class="text-[9px] font-normal text-on-surface-variant/70">Code</span></a>
+<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://santhakumarramesh.github.io/smart-grievance-system/docs/" target="_blank" rel="noopener noreferrer">Live<span class="text-[9px] font-normal text-on-surface-variant/70">Hosted app</span></a>
+<a class="flex-1 flex flex-col items-center gap-0.5 py-2 text-xs font-bold border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-colors" href="https://github.com/Santhakumarramesh/smart-grievance-system" target="_blank" rel="noopener noreferrer">GitHub<span class="text-[9px] font-normal text-on-surface-variant/70">Source</span></a>
 </div>
 </div>
 </div>

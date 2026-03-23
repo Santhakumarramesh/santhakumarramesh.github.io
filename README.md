@@ -90,6 +90,7 @@ No build step.
 ## Changelog (high level)
 
 - **2026-03** — Recruiter blueprint: hero + proof cards, Selected Impact, Why me, CareCopilot before JobGuard, System design labeling, Engineering depth on all six projects, single experience blocks, footer © 2026, meta revision tag for deploy traceability.
+- **2026-03 (micro-polish)** — Skill blurbs tightened (NLP, RAG, cloud, ML, MLOps, data eng); project CTAs: `Live` + “Hosted app”, `GitHub` + “Source” (no redundant “Demo” line).
 
 ---
 
