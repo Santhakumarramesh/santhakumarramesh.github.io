@@ -1,48 +1,71 @@
 # AI/ML Engineer Portfolio
 
-Personal portfolio for Santhakumar Ramesh — AI/ML Engineer focused on NLP, RAG systems, and applied ML deployment. Built for recruiters and hiring managers.
+Personal portfolio for **Santhakumar Ramesh** — AI/ML Engineer (NLP, RAG, production ML). Built for fast recruiter scanning and technical credibility.
 
 **Live site:** [santhakumarramesh.github.io](https://santhakumarramesh.github.io)
 
 ---
 
-## What This Site Is
+## Canonical source (avoid repo vs live drift)
 
-A single-page portfolio that presents:
-
-- **Hero & value proposition** — Tight, specific headline (NLP, RAG, applied ML) instead of broad claims
-- **Experience** — DXC (AI/ML Intern), Mphasis (ML Engineer), MS Data Science (UB)
-- **Projects** — Six featured projects in proof format: problem, approach, result, proof link (demo or repo)
-- **Skills** — ML, NLP, RAG, MLOps, Data Engineering, Cloud
-- **Resume** — Downloadable PDF
+- **Single source of truth:** `index.html` on **`main`**, at repo root.  
+- The live GitHub Pages site serves that file. If the site and raw GitHub ever disagree, **trust `main` / `index.html`** and redeploy or clear cache.  
+- No separate `styles.css` or `script.js` — Tailwind + embedded tokens live in `index.html`.
 
 ---
 
-## Repo Structure
+## What This Site Includes
+
+| Area | Purpose |
+|------|--------|
+| **Hero** | Hiring-oriented headline + stack line; proof mini-cards (not decorative counters) |
+| **Selected Impact** | Four scannable proof bullets |
+| **Why me for AI/ML roles** | Three short positioning cards |
+| **Skills** | ML, NLP, RAG, MLOps, data engineering, cloud |
+| **Experience** | One compact block per role (company, title, dates, ≤3 bullets, tech row) — **no duplicate headings** |
+| **Projects** | Recruiter-first order; each card: **Problem → System design → Result**, stack chips, Live Demo / GitHub; **Engineering depth** in `<details>` for caveats and improvements |
+| **About + resume** | Timeline alignment + PDF download |
+
+---
+
+## Repo structure
 
 ```
-├── index.html              # Single-page portfolio (Tailwind CDN, self-contained)
+├── index.html              # Entire site (Tailwind CDN, self-contained)
 ├── Santhakumar_Ramesh_Resume_AIMLEngineer.pdf
-├── .nojekyll               # Tells GitHub Pages to serve static files as-is
+├── .nojekyll               # GitHub Pages: serve static files as-is
 └── README.md
 ```
 
-The page is intentionally **single-file**: Tailwind config and custom styles are embedded in `index.html`. No build step, no `styles.css` or `script.js`. Easy to deploy via GitHub Pages (branch or Actions).
+**Optional (not committed yet):** Add `preview.png` or `og-image.png` at repo root for social previews, then add `<meta property="og:image" content="https://santhakumarramesh.github.io/og-image.png">` in `index.html`.
 
 ---
 
-## How to Update
+## Featured projects (order matches the site)
+
+| # | Project | Proof |
+|---|---------|--------|
+| 1 | **CareCopilot AI** | Live demo + GitHub — RAG, LangGraph, FAISS, deployed |
+| 2 | **JobGuard AI** | Live demo + GitHub — scale + precision-oriented fraud/claims ML |
+| 3 | Motor Balance Analysis | GitHub — XGBoost, LOOCV, staging |
+| 4 | Occupational NHANES | GitHub — survey-weighted ML, manuscript |
+| 5 | Hospital Analytics | GitHub — ETL, Tableau dashboards |
+| 6 | Smart Grievance | Live demo + GitHub — NLP routing |
+
+Keep **metrics** tied to the project and repo; use **Engineering depth** for methodology caveats.
+
+---
+
+## How to update
 
 ### Projects
-Edit the project cards in `index.html` (section `id="projects"`). Each card uses the proof format: **Problem**, **Approach**, **Result**, plus links (Live Demo / GitHub). Keep metrics tied to specific projects (e.g., "96% precision" → JobGuard).
+Edit `id="projects"` in `index.html`. Use **Problem**, **System design**, **Result** on the card face; put architecture, tradeoffs, and dataset notes inside the **Engineering depth** `<details>` block.
 
 ### Experience
-Edit the experience timeline in `index.html` (section `id="experience"`). Keep bullets grounded—specific actions you can discuss in an interview.
+Edit `id="experience"`. One heading block per role; max three bullets; one tech chip row.
 
 ### Resume
-Replace `Santhakumar_Ramesh_Resume_AIMLEngineer.pdf` with the new file. Links already point to this filename.
-
-**Keep site + resume + LinkedIn aligned:** Use the same role titles, **dates**, email, and phone everywhere. Avoid inflated or unverifiable percentages on the PDF if they are not on the site. For privacy, consider omitting a full street address on the PDF and using city/state only.
+Replace `Santhakumar_Ramesh_Resume_AIMLEngineer.pdf`. Keep **titles, dates, email, phone** aligned with the site and LinkedIn.
 
 ### Canonical timeline (match `index.html` + PDF)
 - **DXC Technology** — AI/ML Engineer Intern, USA — **Jan 2026 – Present**
@@ -51,22 +74,7 @@ Replace `Santhakumar_Ramesh_Resume_AIMLEngineer.pdf` with the new file. Links al
 
 ---
 
-## Why These Featured Projects
-
-| Project | Proof | Highlights |
-|---------|-------|------------|
-| JobGuard AI | Live demo + GitHub | 18K rows, TF-IDF + RF, 96% precision |
-| CareCopilot AI | Live demo + GitHub | RAG, LangGraph, FAISS, deployed |
-| Motor Balance | GitHub | XGBoost, LOOCV, 93.3% within-stage |
-| Occupational NHANES | GitHub | Survey-weighted ML, 87% accuracy, manuscript |
-| Hospital Analytics | GitHub | 50K+ records, 5 Tableau dashboards |
-| Smart Grievance | Live demo + GitHub | NLP routing, ~74% classification |
-
-All projects link to reproducible artifacts (demos or code).
-
----
-
-## Run Locally
+## Run locally
 
 ```bash
 git clone https://github.com/Santhakumarramesh/santhakumarramesh.github.io.git
@@ -74,7 +82,13 @@ cd santhakumarramesh.github.io
 open index.html
 ```
 
-No build step. Open in a browser.
+No build step.
+
+---
+
+## Changelog (high level)
+
+- **2026-03** — Recruiter blueprint: hero + proof cards, Selected Impact, Why me, CareCopilot before JobGuard, System design labeling, Engineering depth on all six projects, single experience blocks, footer © 2026, meta revision tag for deploy traceability.
 
 ---
 
