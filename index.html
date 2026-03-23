@@ -3,6 +3,7 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="portfolio-revision" content="2026-03-footer"/>
 <title>Santhakumar Ramesh | AI/ML Engineer Portfolio</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
@@ -119,10 +120,13 @@
 <!-- Hero Section -->
 <section class="max-w-7xl mx-auto px-6 py-16 md:py-32 grid md:grid-cols-12 gap-12 items-center">
 <div class="md:col-span-7 space-y-8">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest border border-outline-variant/20">
-<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-<span class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant md:hidden">DXC Jan 2026– · Mphasis Aug 2023–Dec 2024 · UB MS grad. Dec 2025</span>
-<span class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant hidden md:inline">DXC AI/ML Intern Jan 2026–Present · Mphasis (Intern Aug–Dec 2023, Full-time Jan–Dec 2024) · MS Data Science UB, graduated Dec 2025</span>
+<div class="rounded-xl border border-outline-variant/30 bg-surface-container-low/80 px-4 py-3 max-w-2xl">
+<p class="text-[10px] uppercase tracking-widest font-bold text-primary mb-2">Career timeline (same as Experience below)</p>
+<ul class="text-xs text-on-surface-variant space-y-1.5 leading-snug font-medium">
+<li><span class="text-on-surface">DXC Technology</span> · AI/ML Engineer Intern · USA · <span class="text-primary">Jan 2026 – Present</span></li>
+<li><span class="text-on-surface">Mphasis</span> · Machine Learning Engineer · India · <span class="text-primary">Intern Aug–Dec 2023</span> · <span class="text-primary">Full-time Jan 2024–Dec 2024</span></li>
+<li><span class="text-on-surface">University at Buffalo</span> · MS Data Science &amp; Applications · <span class="text-primary">Jan 2025 – Dec 2025 · Graduated</span></li>
+</ul>
 </div>
 <h1 class="text-5xl md:text-7xl font-headline font-bold leading-tight">AI/ML Engineer focused on NLP, RAG systems, and applied ML deployment</h1>
 <p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed">Python, FastAPI, Scikit-learn, TensorFlow, PyTorch, LangChain. End-to-end ML pipelines, NLP, and deployed AI applications.</p>
@@ -309,21 +313,16 @@ Built with an engineering mindset
 <div class="relative space-y-16 after:content-[''] after:absolute after:left-4 md:after:left-1/2 after:top-0 after:bottom-0 after:w-px after:bg-outline-variant/20">
 <!-- DXC -->
 <div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center group">
-<div class="hidden md:block w-1/2 pr-12 text-right">
-<h3 class="text-xl font-bold">DXC Technology</h3>
+<div class="w-full md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0 order-1 md:order-none">
+<h3 class="text-xl font-bold" id="exp-dxc">DXC Technology</h3>
 <p class="text-primary font-medium">AI / Machine Learning Engineer Intern</p>
 <p class="text-sm text-on-surface-variant mt-2">USA | Jan 2026 – Present</p>
 </div>
 <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-highest border-4 border-background z-10 flex items-center justify-center group-hover:border-primary transition-colors">
 <span class="w-2 h-2 rounded-full bg-primary"></span>
 </div>
-<div class="w-full md:w-1/2 pl-12">
-<div class="md:hidden mb-4">
-<h3 class="text-xl font-bold">DXC Technology</h3>
-<p class="text-primary font-medium">AI / Machine Learning Engineer Intern</p>
-<p class="text-sm text-on-surface-variant mt-2">USA | Jan 2026 – Present</p>
-</div>
-<ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4">
+<div class="w-full md:w-1/2 pl-12 order-2 md:order-none">
+<ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4" aria-labelledby="exp-dxc">
 <li>Design and evaluate ML solutions for forecasting and analytics (Python, Scikit-learn, TensorFlow, PyTorch).</li>
 <li>Build SQL and PySpark pipelines for batch and near real-time inference.</li>
 <li>Develop CNN and LSTM models for pattern recognition and time-series forecasting.</li>
@@ -333,21 +332,16 @@ Built with an engineering mindset
 </div>
 <!-- Mphasis -->
 <div class="relative flex flex-col md:flex-row-reverse md:justify-between items-start md:items-center group">
-<div class="hidden md:block w-1/2 pl-12 text-left">
-<h3 class="text-xl font-bold">Mphasis</h3>
+<div class="w-full md:w-1/2 md:pl-12 text-left mb-4 md:mb-0 order-1 md:order-none">
+<h3 class="text-xl font-bold" id="exp-mphasis">Mphasis</h3>
 <p class="text-secondary font-medium">Machine Learning Engineer</p>
 <p class="text-sm text-on-surface-variant mt-2">India | Intern: Aug–Dec 2023 • Full-time: Jan 2024–Dec 2024</p>
 </div>
 <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-highest border-4 border-background z-10 flex items-center justify-center group-hover:border-secondary transition-colors">
 <span class="w-2 h-2 rounded-full bg-secondary"></span>
 </div>
-<div class="w-full md:w-1/2 pr-12 text-left md:text-right">
-<div class="md:hidden mb-4">
-<h3 class="text-xl font-bold">Mphasis</h3>
-<p class="text-secondary font-medium">Machine Learning Engineer</p>
-<p class="text-sm text-on-surface-variant mt-2">India | Intern: Aug–Dec 2023 • Full-time: Jan 2024–Dec 2024</p>
-</div>
-<ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4 md:pl-0 md:list-none">
+<div class="w-full md:w-1/2 pr-12 text-left md:text-right order-2 md:order-none">
+<ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4 md:pl-0 md:list-none" aria-labelledby="exp-mphasis">
 <li>Developed ML models in Python and Scikit-learn for classification and regression; built preprocessing and feature engineering pipelines.</li>
 <li>Applied NLP: text preprocessing, TF-IDF, sentiment analysis.</li>
 <li>Processed high-volume data with Apache Spark; deployed models with Docker and CI/CD.</li>
@@ -356,21 +350,16 @@ Built with an engineering mindset
 </div>
 <!-- UB -->
 <div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center group">
-<div class="hidden md:block w-1/2 pr-12 text-right">
-<h3 class="text-xl font-bold">University at Buffalo</h3>
+<div class="w-full md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0 order-1 md:order-none">
+<h3 class="text-xl font-bold" id="exp-ub">University at Buffalo</h3>
 <p class="text-primary font-medium">MS in Data Science &amp; Applications</p>
 <p class="text-sm text-on-surface-variant mt-2">Jan 2025 – Dec 2025 | Graduated</p>
 </div>
 <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-highest border-4 border-background z-10 flex items-center justify-center group-hover:border-primary transition-colors">
 <span class="w-2 h-2 rounded-full bg-primary"></span>
 </div>
-<div class="w-full md:w-1/2 pl-12">
-<div class="md:hidden mb-4">
-<h3 class="text-xl font-bold">University at Buffalo</h3>
-<p class="text-primary font-medium">MS in Data Science &amp; Applications</p>
-<p class="text-sm text-on-surface-variant mt-2">Jan 2025 – Dec 2025 | Graduated</p>
-</div>
-<ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4">
+<div class="w-full md:w-1/2 pl-12 order-2 md:order-none">
+<ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4" aria-labelledby="exp-ub">
 <li>Coursework: Statistical Data Mining I &amp; II, Deep Learning, Data Models &amp; Query Language, Data Intensive Computing.</li>
 <li>GPA: 3.097</li>
 </ul>
@@ -604,7 +593,10 @@ Built with an engineering mindset
 <div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto font-['Inter'] text-sm tracking-wide">
 <div class="flex flex-col items-center md:items-start gap-2">
 <span class="font-['Space_Grotesk'] font-bold text-slate-200 text-lg">Santhakumar Ramesh</span>
-<p class="text-slate-500">© 2026 Santhakumar Ramesh.</p>
+<div class="text-slate-500 text-center md:text-left">
+<p class="font-medium text-slate-400">© 2026 Santhakumar Ramesh</p>
+<p class="text-xs mt-1 text-slate-600">Last updated March 2026</p>
+</div>
 </div>
 <div class="flex gap-8">
 <a class="text-slate-500 hover:text-blue-300 hover:underline decoration-blue-500/50 underline-offset-4 transition-all duration-300" href="https://github.com/Santhakumarramesh" target="_blank" rel="noopener noreferrer">GitHub</a>
