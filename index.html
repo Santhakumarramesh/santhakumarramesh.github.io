@@ -121,7 +121,8 @@
 <div class="md:col-span-7 space-y-8">
 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest border border-outline-variant/20">
 <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-<span class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">AI/ML Engineer Intern at DXC | Former Mphasis ML Engineer | MS Data Science, UB</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant md:hidden">DXC Jan 2026– · Mphasis Aug 2023–Dec 2024 · UB MS grad. Dec 2025</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant hidden md:inline">DXC AI/ML Intern Jan 2026–Present · Mphasis (Intern Aug–Dec 2023, Full-time Jan–Dec 2024) · MS Data Science UB, graduated Dec 2025</span>
 </div>
 <h1 class="text-5xl md:text-7xl font-headline font-bold leading-tight">AI/ML Engineer focused on NLP, RAG systems, and applied ML deployment</h1>
 <p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed">Python, FastAPI, Scikit-learn, TensorFlow, PyTorch, LangChain. End-to-end ML pipelines, NLP, and deployed AI applications.</p>
@@ -190,7 +191,7 @@
 </div>
 <div class="md:w-2/3 space-y-8">
 <p class="text-2xl text-on-surface leading-relaxed">AI/ML Engineer focused on NLP, RAG systems, and applied ML deployment—turning data and models into working products.</p>
-<p class="text-lg text-on-surface-variant leading-relaxed">Intern at DXC Technology; previously ML Engineer at Mphasis. MS in Data Science, University at Buffalo. I build ML pipelines, NLP classifiers, RAG applications, and deploy them with Python, FastAPI, Docker, AWS, and Azure. Each project below links to a live demo or reproducible repo.</p>
+<p class="text-lg text-on-surface-variant leading-relaxed">Same timeline everywhere: <strong class="text-on-surface">DXC</strong> (Jan 2026–Present), <strong class="text-on-surface">Mphasis</strong> (intern Aug–Dec 2023; full-time Jan–Dec 2024), <strong class="text-on-surface">UB MS Data Science</strong> (Jan–Dec 2025, graduated). I build ML pipelines, NLP, RAG, and deploy with Python, FastAPI, Docker, AWS, and Azure. Projects link to demos or repos.</p>
 </div>
 </div>
 </section>
@@ -320,6 +321,7 @@ Built with an engineering mindset
 <div class="md:hidden mb-4">
 <h3 class="text-xl font-bold">DXC Technology</h3>
 <p class="text-primary font-medium">AI / Machine Learning Engineer Intern</p>
+<p class="text-sm text-on-surface-variant mt-2">USA | Jan 2026 – Present</p>
 </div>
 <ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4">
 <li>Design and evaluate ML solutions for forecasting and analytics (Python, Scikit-learn, TensorFlow, PyTorch).</li>
@@ -343,6 +345,7 @@ Built with an engineering mindset
 <div class="md:hidden mb-4">
 <h3 class="text-xl font-bold">Mphasis</h3>
 <p class="text-secondary font-medium">Machine Learning Engineer</p>
+<p class="text-sm text-on-surface-variant mt-2">India | Intern: Aug–Dec 2023 • Full-time: Jan 2024–Dec 2024</p>
 </div>
 <ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4 md:pl-0 md:list-none">
 <li>Developed ML models in Python and Scikit-learn for classification and regression; built preprocessing and feature engineering pipelines.</li>
@@ -365,6 +368,7 @@ Built with an engineering mindset
 <div class="md:hidden mb-4">
 <h3 class="text-xl font-bold">University at Buffalo</h3>
 <p class="text-primary font-medium">MS in Data Science &amp; Applications</p>
+<p class="text-sm text-on-surface-variant mt-2">Jan 2025 – Dec 2025 | Graduated</p>
 </div>
 <ul class="space-y-3 text-on-surface-variant text-sm list-disc list-outside pl-4">
 <li>Coursework: Statistical Data Mining I &amp; II, Deep Learning, Data Models &amp; Query Language, Data Intensive Computing.</li>
@@ -392,10 +396,16 @@ Built with an engineering mindset
 </div>
 <div class="p-6 flex-grow space-y-4">
 <h3 class="text-xl font-bold">JobGuard AI — Fake Job Posting Detector</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed"><strong>Problem:</strong> Fraudulent job postings waste applicant time and erode trust. <strong>Architecture:</strong> TF-IDF feature extraction → Random Forest classifier → real-time inference API. <strong>Outcomes:</strong> 96% precision, 18K training samples, live demo.</p>
+<div class="text-xs text-on-surface-variant space-y-2 leading-relaxed">
+<p><span class="text-primary font-bold">Problem</span> — Flag fraudulent job postings from text.</p>
+<p><span class="text-primary font-bold">Approach</span> — TF-IDF + Random Forest on ~18K labeled descriptions.</p>
+<p><span class="text-primary font-bold">Result</span> — 96% precision; live demo + reproducible notebook in repo.</p>
+</div>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider mt-3 mb-1">Stack</p>
 <div class="flex flex-wrap gap-2">
-<span class="text-[10px] font-bold text-outline">SKLEARN</span>
 <span class="text-[10px] font-bold text-outline">PYTHON</span>
+<span class="text-[10px] font-bold text-outline">SKLEARN</span>
+<span class="text-[10px] font-bold text-outline">TF-IDF</span>
 </div>
 <details class="group/details mt-4">
 <summary class="text-xs font-bold text-primary cursor-pointer list-none flex items-center gap-1 [&::-webkit-details-marker]:hidden">Engineering depth</summary>
@@ -423,11 +433,17 @@ Built with an engineering mindset
 </div>
 <div class="p-6 flex-grow space-y-4">
 <h3 class="text-xl font-bold">CareCopilot AI — Healthcare RAG Assistant</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed"><strong>Problem:</strong> Medical Q&amp;A needs grounded, retrievable answers. <strong>Architecture:</strong> LangGraph state machine → FAISS retrieval → GPT-4o generation with source citations. <strong>Outcomes:</strong> Deployed app (Vercel), JWT RBAC, answers cite chunks.</p>
+<div class="text-xs text-on-surface-variant space-y-2 leading-relaxed">
+<p><span class="text-primary font-bold">Problem</span> — Medical Q&amp;A must be grounded in source documents.</p>
+<p><span class="text-primary font-bold">Approach</span> — LangGraph + FAISS retrieval + GPT-4o; citations returned with answers.</p>
+<p><span class="text-primary font-bold">Result</span> — Public demo (Vercel); JWT RBAC in API. Details in repo.</p>
+</div>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider mt-3 mb-1">Stack</p>
 <div class="flex flex-wrap gap-2">
-<span class="text-[10px] font-bold text-outline">GPT-4o</span>
 <span class="text-[10px] font-bold text-outline">FASTAPI</span>
 <span class="text-[10px] font-bold text-outline">FAISS</span>
+<span class="text-[10px] font-bold text-outline">LANGGRAPH</span>
+<span class="text-[10px] font-bold text-outline">GPT-4o</span>
 </div>
 <details class="group/details mt-4">
 <summary class="text-xs font-bold text-primary cursor-pointer list-none flex items-center gap-1 [&::-webkit-details-marker]:hidden">Engineering depth</summary>
@@ -454,7 +470,12 @@ Built with an engineering mindset
 </div>
 <div class="p-6 flex-grow space-y-4">
 <h3 class="text-xl font-bold">Motor Balance Analysis — PD vs Welders</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed"><strong>Problem:</strong> Assess motor balance severity from BBS, Mini-BEST, FES. <strong>Approach:</strong> XGBoost with LOOCV; Parkinson's-derived staging. <strong>Result:</strong> 80% binary accuracy; 93.3% within-one-stage. Full notebook and data in repo.</p>
+<div class="text-xs text-on-surface-variant space-y-2 leading-relaxed">
+<p><span class="text-primary font-bold">Problem</span> — Stage motor balance from clinical scales (BBS, Mini-BEST, FES).</p>
+<p><span class="text-primary font-bold">Approach</span> — XGBoost + LOOCV; staging informed by PD literature.</p>
+<p><span class="text-primary font-bold">Result</span> — 80% binary accuracy; 93.3% within-one-stage (see repo).</p>
+</div>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider mt-3 mb-1">Stack</p>
 <div class="flex flex-wrap gap-2">
 <span class="text-[10px] font-bold text-outline">PYTHON</span>
 <span class="text-[10px] font-bold text-outline">XGBOOST</span>
@@ -484,7 +505,12 @@ Built with an engineering mindset
 </div>
 <div class="p-6 flex-grow space-y-4">
 <h3 class="text-xl font-bold">Occupational Heavy Metal Exposure &amp; Fall Risk</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed"><strong>Problem:</strong> Link occupational heavy metal exposure to fall risk in older adults. <strong>Approach:</strong> Survey-weighted XGBoost on NHANES. <strong>Result:</strong> 87% accuracy; manuscript in progress. Code and analysis in repo.</p>
+<div class="text-xs text-on-surface-variant space-y-2 leading-relaxed">
+<p><span class="text-primary font-bold">Problem</span> — Relate occupational metal exposure to fall risk (NHANES).</p>
+<p><span class="text-primary font-bold">Approach</span> — Survey-weighted XGBoost; reproducible pipeline in repo.</p>
+<p><span class="text-primary font-bold">Result</span> — 87% accuracy in study setup; manuscript in progress.</p>
+</div>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider mt-3 mb-1">Stack</p>
 <div class="flex flex-wrap gap-2">
 <span class="text-[10px] font-bold text-outline">PYTHON</span>
 <span class="text-[10px] font-bold text-outline">XGBOOST</span>
@@ -506,7 +532,12 @@ Built with an engineering mindset
 </div>
 <div class="p-6 flex-grow space-y-4">
 <h3 class="text-xl font-bold">Hospital Operations Analytics</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed"><strong>Problem:</strong> Make hospital visit and billing data actionable. <strong>Approach:</strong> SQLite ETL, 50K+ records → 5 Tableau dashboards. <strong>Result:</strong> 15+ KPIs: revenue, doctor activity, patient frequency. Repo includes datasets and ETL code.</p>
+<div class="text-xs text-on-surface-variant space-y-2 leading-relaxed">
+<p><span class="text-primary font-bold">Problem</span> — Turn visit/billing data into operational views.</p>
+<p><span class="text-primary font-bold">Approach</span> — SQLite ETL → five Tableau dashboards.</p>
+<p><span class="text-primary font-bold">Result</span> — 50K+ rows, 15+ KPIs (revenue, providers, visits); code in repo.</p>
+</div>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider mt-3 mb-1">Stack</p>
 <div class="flex flex-wrap gap-2">
 <span class="text-[10px] font-bold text-outline">TABLEAU</span>
 <span class="text-[10px] font-bold text-outline">SQL</span>
@@ -528,7 +559,12 @@ Built with an engineering mindset
 </div>
 <div class="p-6 flex-grow space-y-4">
 <h3 class="text-xl font-bold">Smart Grievance System — AI Complaint Routing</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed"><strong>Problem:</strong> Route citizen complaints to correct department without manual triage. <strong>Approach:</strong> TF-IDF + classifier (Flask, scikit-learn); JWT RBAC, multi-language. <strong>Result:</strong> ~74% department classification; live demo and full code in repo.</p>
+<div class="text-xs text-on-surface-variant space-y-2 leading-relaxed">
+<p><span class="text-primary font-bold">Problem</span> — Route complaints to the right department automatically.</p>
+<p><span class="text-primary font-bold">Approach</span> — TF-IDF + classifier (Flask); JWT RBAC; multi-language UI.</p>
+<p><span class="text-primary font-bold">Result</span> — ~74% department accuracy on held-out set; demo + repo.</p>
+</div>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider mt-3 mb-1">Stack</p>
 <div class="flex flex-wrap gap-2">
 <span class="text-[10px] font-bold text-outline">PYTHON</span>
 <span class="text-[10px] font-bold text-outline">FLASK</span>
@@ -568,7 +604,7 @@ Built with an engineering mindset
 <div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto font-['Inter'] text-sm tracking-wide">
 <div class="flex flex-col items-center md:items-start gap-2">
 <span class="font-['Space_Grotesk'] font-bold text-slate-200 text-lg">Santhakumar Ramesh</span>
-<p class="text-slate-500">© 2025 Santhakumar Ramesh.</p>
+<p class="text-slate-500">© 2026 Santhakumar Ramesh.</p>
 </div>
 <div class="flex gap-8">
 <a class="text-slate-500 hover:text-blue-300 hover:underline decoration-blue-500/50 underline-offset-4 transition-all duration-300" href="https://github.com/Santhakumarramesh" target="_blank" rel="noopener noreferrer">GitHub</a>

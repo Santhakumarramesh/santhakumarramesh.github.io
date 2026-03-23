@@ -42,6 +42,13 @@ Edit the experience timeline in `index.html` (section `id="experience"`). Keep b
 ### Resume
 Replace `Santhakumar_Ramesh_Resume_AIMLEngineer.pdf` with the new file. Links already point to this filename.
 
+**Keep site + resume + LinkedIn aligned:** Use the same role titles, **dates**, email, and phone everywhere. Avoid inflated or unverifiable percentages on the PDF if they are not on the site. For privacy, consider omitting a full street address on the PDF and using city/state only.
+
+### Canonical timeline (match `index.html` + PDF)
+- **DXC Technology** — AI/ML Engineer Intern, USA — **Jan 2026 – Present**
+- **Mphasis** — ML Engineer, India — **Intern Aug–Dec 2023**; **Full-time Jan 2024–Dec 2024**
+- **University at Buffalo** — MS Data Science & Applications — **Jan 2025 – Dec 2025** (graduated)
+
 ---
 
 ## Why These Featured Projects
