@@ -123,6 +123,33 @@
     body {
       min-height: max(884px, 100dvh);
     }
+    @keyframes gradient-x {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    .animate-gradient-x {
+      background-size: 200% 200%;
+      animation: gradient-x 6s ease infinite;
+    }
+    .avatar-glow {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #4d8eff, #d0bcff, #571bc1, #4d8eff);
+      background-size: 300% auto;
+      animation: gradient-x 4s linear infinite;
+      z-index: -1;
+      filter: blur(8px);
+    }
+    .avatar-glow-inner {
+      position: absolute;
+      inset: -2px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #4d8eff, #d0bcff, #4d8eff);
+      background-size: 200% auto;
+      animation: gradient-x 4s linear infinite;
+      z-index: -1;
+    }
   </style>
 </head>
 <body class="selection:bg-primary-container selection:text-on-primary-container" data-site-year="2026">
@@ -162,53 +189,57 @@
 <!-- Hero Section -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-32 grid md:grid-cols-12 gap-8 md:gap-12 items-center">
 <div class="md:col-span-7 space-y-8">
-<!-- Small circular avatar only: full-width hero photo would need a proper headshot; replace profile.png when you have one -->
 <div class="flex flex-wrap items-center gap-4 sm:gap-6">
-<img alt="Santhakumar Ramesh" class="w-20 h-20 sm:w-28 sm:h-28 shrink-0 rounded-full object-cover object-[center_22%] ring-1 ring-outline-variant/50 border border-white/10 shadow-md brightness-[1.06] contrast-[1.02]" decoding="async" height="112" loading="lazy" src="profile.png" width="112"/>
+<div class="relative inline-block w-20 h-20 sm:w-28 sm:h-28 shrink-0">
+  <div class="avatar-glow"></div>
+  <div class="avatar-glow-inner"></div>
+  <img alt="Santhakumar Ramesh" class="relative w-full h-full rounded-full object-cover object-[center_22%] ring-1 ring-outline-variant/50 border border-white/10 shadow-md brightness-[1.06] contrast-[1.02] z-10" decoding="async" height="112" loading="lazy" src="profile.png" width="112"/>
+</div>
 <div class="min-w-0">
 <p class="text-2xl sm:text-3xl font-bold text-on-surface tracking-tight">Santhakumar Ramesh</p>
 <p class="text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent font-['Space_Grotesk'] tracking-tight mt-1">AI/ML Engineer · MS Data Science (UB)</p>
 </div>
 </div>
-<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-headline font-bold leading-tight">AI/ML Engineer building NLP, RAG, and production-ready ML systems</h1>
+<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-headline font-bold leading-tight bg-gradient-to-r from-[#adc6ff] via-[#d0bcff] to-[#adc6ff] animate-gradient-x bg-clip-text text-transparent pb-2">AI/ML Engineer building NLP, RAG, and production-ready ML systems</h1>
 <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed">Python, FastAPI, Scikit-learn, PyTorch, LangGraph, Docker, AWS/Azure — from experimentation to deployment.</p>
 <div class="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-4">
-<a class="gradient-bg text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity w-full sm:w-auto min-h-[44px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" href="#projects">View Projects <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span></a>
-<a class="bg-surface-container-highest text-on-surface px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold border border-outline-variant/20 hover:bg-surface-bright transition-colors w-full sm:w-auto text-center min-h-[44px] inline-flex items-center justify-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="#contact">Contact Me</a>
+<a class="gradient-bg text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/30 transition-all w-full sm:w-auto min-h-[44px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" href="#projects">View Projects <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span></a>
+<a class="bg-surface-container-highest text-on-surface px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold border border-outline-variant/20 hover:bg-surface-bright hover:-translate-y-1 hover:shadow-lg transition-all w-full sm:w-auto text-center min-h-[44px] inline-flex items-center justify-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="#contact">Contact Me</a>
 </div>
 </div>
-<div class="md:col-span-5 relative">
-<!-- System Status Panel Card -->
-<div class="glass-card rounded-xl p-8 border border-outline-variant/10 shadow-2xl relative z-10">
-<div class="flex justify-between items-start mb-8">
-<div>
-<p class="text-[10px] uppercase tracking-widest text-primary font-bold mb-1">Current Status</p>
-<h3 class="text-2xl font-headline font-bold">NLP, RAG &amp; Applied ML</h3>
-</div>
-<span class="material-symbols-outlined text-primary text-4xl">memory</span>
-</div>
-<div class="space-y-4">
-<div class="p-4 rounded-lg bg-surface-container-low border border-primary/10">
-<p class="text-[10px] uppercase tracking-widest text-primary font-bold mb-1">Live Demo</p>
-<p class="text-sm font-medium text-on-surface">Deployed GenAI app</p>
-<p class="text-xs text-on-surface-variant mt-1">Healthcare RAG (Vercel) + fraud NLP demo</p>
-</div>
-<div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/10">
-<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">In Production</p>
-<p class="text-sm font-medium text-on-surface">Production-oriented ML pipelines</p>
-<p class="text-xs text-on-surface-variant mt-1">SQL, PySpark, Docker, APIs, cloud</p>
-</div>
-<div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/10">
-<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Research</p>
-<p class="text-sm font-medium text-on-surface">Research + business analytics</p>
-<p class="text-xs text-on-surface-variant mt-1">Clinical ML, NHANES, Tableau / ETL</p>
-</div>
-</div>
-</div>
+<div class="md:col-span-5 relative mt-8 md:mt-0">
+<!-- Bento Box Quick Stats -->
+<div class="grid grid-cols-2 gap-4 relative z-10">
+  <div class="glass-card rounded-xl p-5 border border-primary/20 hover:border-primary/50 hover:-translate-y-1 transition-all shadow-xl flex flex-col justify-center">
+    <span class="material-symbols-outlined text-primary text-3xl mb-2">code_blocks</span>
+    <h4 class="text-2xl font-bold text-white">2+ Years</h4>
+    <p class="text-[10px] uppercase tracking-widest text-primary font-bold mt-1">Prod ML Exp</p>
+  </div>
+  <div class="glass-card rounded-xl p-5 border border-secondary/20 hover:border-secondary/50 hover:-translate-y-1 transition-all shadow-xl flex flex-col justify-center">
+    <span class="material-symbols-outlined text-secondary text-3xl mb-2">school</span>
+    <h4 class="text-2xl font-bold text-white">MS Degree</h4>
+    <p class="text-[10px] uppercase tracking-widest text-secondary font-bold mt-1">Data Science</p>
+  </div>
+  <div class="glass-card rounded-xl p-5 border border-secondary/20 hover:border-secondary/50 hover:-translate-y-1 transition-all shadow-xl flex flex-col justify-center">
+    <span class="material-symbols-outlined text-secondary text-3xl mb-2">neural_network</span>
+    <h4 class="text-xl font-bold text-white">NLP & RAG</h4>
+    <p class="text-[10px] uppercase tracking-widest text-secondary font-bold mt-1">Applied AI Stack</p>
+  </div>
+  <div class="glass-card rounded-xl p-5 border border-primary/20 hover:border-primary/50 hover:-translate-y-1 transition-all shadow-xl flex flex-col justify-center bg-primary/5">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="relative flex h-3 w-3">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+      </span>
+      <span class="text-xs font-bold text-green-400 uppercase tracking-wider">Available</span>
+    </div>
+    <h4 class="text-sm font-bold text-white">Full-Time</h4>
+    <p class="text-[10px] uppercase tracking-widest text-primary font-bold mt-1">AI/ML Engineer</p>
+  </div>
 </div>
 <!-- Ambient Glow -->
-<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/20 blur-[100px] rounded-full"></div>
-<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-secondary/20 blur-[100px] rounded-full"></div>
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/30 blur-[120px] rounded-full animate-pulse-slow"></div>
+<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-secondary/30 blur-[120px] rounded-full animate-pulse-slow"></div>
 </div>
 </section>
 <!-- Proof strip (replaces decorative stat counters) -->
