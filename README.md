@@ -61,10 +61,11 @@ New Stitch zips (e.g. `stitch_portfolio_dashboard_home-5.zip`) should be process
 |---|---------|--------|
 | 1 | **CareCopilot AI** | Live demo + GitHub — RAG, LangGraph, FAISS, deployed |
 | 2 | **JobGuard AI** | Live demo + GitHub — scale + precision-oriented fraud/claims ML |
-| 3 | Motor Balance Analysis | GitHub — XGBoost, LOOCV, staging |
-| 4 | Occupational NHANES | GitHub — survey-weighted ML, manuscript |
-| 5 | Hospital Analytics | GitHub — ETL, Tableau dashboards |
-| 6 | Smart Grievance | Live demo + GitHub — NLP routing |
+| 3 | **GodsView** | Live demo (`/brain`) + GitHub — real-time 6-layer trading intelligence pipeline |
+| 4 | Motor Balance Analysis | GitHub — XGBoost, LOOCV, staging |
+| 5 | Occupational NHANES | GitHub — survey-weighted ML, manuscript |
+| 6 | Hospital Analytics | GitHub — ETL, Tableau dashboards |
+| 7 | Smart Grievance | Live demo + GitHub — NLP routing |
 
 Keep **metrics** tied to the project and repo; use **Engineering depth** for methodology caveats.
 
